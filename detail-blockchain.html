@@ -3,70 +3,1084 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Detail Artikel: Blockchain</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Blockchain - Teknologi Ledger Terdistribusi | TechToday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Progress Bar -->
+  <div class="progress-bar"></div>
+  
+  <!-- Header dengan Hero Section Khusus Blockchain -->
   <header>
+    <div class="header-overlay"></div>
     <nav>
-      <div class="logo">TechToday</div>
-      <ul>
-        <li><a href="index.html#artikel">Artikel</a></li>
-        <li><a href="index.html#video">Video</a></li>
-        <li><a href="index.html#sumber">Sumber</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <article>
-      <h1>Blockchain: Fondasi Keamanan Digital Masa Depan</h1>
-      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Ilustrasi Blockchain" class="artikel-img">
-      <section>
-        <p>
-          <strong>Blockchain</strong> adalah teknologi penyimpanan data digital yang terdesentralisasi dan terjamin keamanannya. Setiap data yang masuk ke blockchain akan tercatat dalam blok yang saling terhubung dan tidak dapat diubah.
-        </p>
-        <p>
-          Blockchain banyak digunakan dalam cryptocurrency seperti Bitcoin dan Ethereum. Selain itu, blockchain juga mulai diterapkan di bidang logistik, kesehatan, hingga pemerintahan untuk transparansi dan keamanan data.
-        </p>
-        <p>
-          Dengan sifatnya yang transparan dan sulit diretas, blockchain diyakini akan menjadi fondasi utama dalam pengembangan sistem digital di masa depan.
-        </p>
-      </section>
-      <aside>
-        <h2>Fakta Menarik Blockchain</h2>
-        <ul>
-          <li>Blockchain pertama kali diperkenalkan pada tahun 2008 oleh Satoshi Nakamoto.</li>
-          <li>Data di blockchain tidak dapat dihapus atau diubah secara sepihak.</li>
-          <li>Blockchain mendukung transaksi tanpa perantara (peer-to-peer).</li>
+      <div class="logo-container" onclick="window.location.href='index.html'">
+        <div class="logo-icon">
+          <i class="fas fa-microchip"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">TechToday</span>
+          <span class="logo-sub">Future Tech Insights</span>
+        </div>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html#artikel" class="nav-link"><i class="fas fa-newspaper"></i> Artikel</a></li>
+          <li><a href="index.html#video" class="nav-link"><i class="fas fa-play-circle"></i> Video</a></li>
+          <li><a href="index.html#sumber" class="nav-link"><i class="fas fa-book"></i> Sumber</a></li>
+          <li><a href="index.html#topik" class="nav-link"><i class="fas fa-th-large"></i> Topik</a></li>
         </ul>
-      </aside>
-    </article>
-
-    <section id="video" class="video-section">
-      <h2>Video Penjelasan Blockchain</h2>
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/SSo_EIwHSd4" title="YouTube video tentang Blockchain" frameborder="0" allowfullscreen></iframe>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle mobile menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    
+    <!-- Hero Section Khusus Blockchain -->
+    <section class="hero blockchain-hero">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="tag"><i class="fas fa-link"></i> Blockchain & Web3</span>
+          <span class="tag-date"><i class="far fa-calendar-alt"></i> 16 Des 2025</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-highlight">Blockchain</span> Revolusi Teknologi Ledger Terdistribusi
+        </h1>
+        <p class="hero-subtitle">
+          Dari cryptocurrency hingga kontrak pintar, blockchain membentuk fondasi untuk internet yang lebih transparan, aman, dan terdesentralisasi.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">$2.1T</span>
+            <span class="stat-label">Nilai Pasar Crypto</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">10K+</span>
+            <span class="stat-label">Proyek Blockchain</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">82%</span>
+            <span class="stat-label">Bank yang Eksplorasi</span>
+          </div>
+        </div>
+        <a href="#artikel" class="hero-cta">
+          Jelajahi Blockchain <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
+      <div class="hero-visual">
+        <div class="blockchain-visual">
+          <div class="blockchain-chain">
+            <div class="block block-1">
+              <div class="block-header">
+                <span class="block-hash">#1a2b3c</span>
+                <span class="block-nonce">12345</span>
+              </div>
+              <div class="block-data">
+                <span>Tx: 10 transactions</span>
+                <span>Timestamp: 12:30:45</span>
+              </div>
+            </div>
+            <div class="block block-2">
+              <div class="block-header">
+                <span class="block-hash">#4d5e6f</span>
+                <span class="block-nonce">67890</span>
+              </div>
+              <div class="block-data">
+                <span>Tx: 8 transactions</span>
+                <span>Timestamp: 12:31:15</span>
+              </div>
+            </div>
+            <div class="block block-3">
+              <div class="block-header">
+                <span class="block-hash">#7g8h9i</span>
+                <span class="block-nonce">11223</span>
+              </div>
+              <div class="block-data">
+                <span>Tx: 12 transactions</span>
+                <span>Timestamp: 12:31:45</span>
+              </div>
+            </div>
+            <div class="chain-connector"></div>
+            <div class="chain-connector"></div>
+          </div>
+          <div class="nodes-container">
+            <div class="node node-1">
+              <i class="fas fa-server"></i>
+              <span>Node 1</span>
+            </div>
+            <div class="node node-2">
+              <i class="fas fa-server"></i>
+              <span>Node 2</span>
+            </div>
+            <div class="node node-3">
+              <i class="fas fa-server"></i>
+              <span>Node 3</span>
+            </div>
+            <div class="node node-4">
+              <i class="fas fa-server"></i>
+              <span>Node 4</span>
+            </div>
+            <div class="network-lines"></div>
+          </div>
+        </div>
       </div>
     </section>
+  </header>
 
-    <section id="sumber" class="sumber-section">
-      <h2>Sumber & Referensi</h2>
-      <ul>
-        <li><a href="https://id.wikipedia.org/wiki/Blockchain" target="_blank">Wikipedia: Blockchain</a></li>
-        <li><a href="https://www.kompas.com/skola/read/2021/03/17/190000569/apa-itu-blockchain" target="_blank">Kompas: Apa itu Blockchain?</a></li>
-      </ul>
+  <!-- Main Content -->
+  <main>
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <ol>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="index.html#topik">Topik</a></li>
+        <li class="active">Blockchain</li>
+      </ol>
+    </nav>
+    
+    <!-- Article Section -->
+    <article id="artikel" class="article-main">
+      <div class="article-header">
+        <div class="article-meta">
+          <div class="author">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Penulis" class="author-img">
+            <div class="author-info">
+              <span class="author-name">Dr. Rina Wijaya, Ph.D.</span>
+              <span class="author-title">Blockchain Researcher & Cryptography Expert</span>
+            </div>
+          </div>
+          <div class="article-info">
+            <span class="reading-time"><i class="far fa-clock"></i> 12 min read</span>
+            <span class="share-btn" id="shareArticle"><i class="fas fa-share-alt"></i> Share</span>
+          </div>
+        </div>
+        <h1>Blockchain: Fondasi Teknologi untuk Ekonomi Digital Terdesentralisasi</h1>
+        <div class="article-tags">
+          <span class="article-tag"><i class="fas fa-link"></i> Distributed Ledger</span>
+          <span class="article-tag"><i class="fab fa-bitcoin"></i> Cryptocurrency</span>
+          <span class="article-tag"><i class="fas fa-file-contract"></i> Smart Contracts</span>
+          <span class="article-tag"><i class="fas fa-shield-alt"></i> Cryptography</span>
+        </div>
+      </div>
+      
+      <div class="article-content">
+        <div class="content-main">
+          <div class="featured-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+              alt="Ilustrasi Blockchain Modern"
+              class="featured-img"
+            />
+            <div class="image-caption">Visualisasi teknologi blockchain sebagai rantai blok yang saling terhubung dan terenkripsi</div>
+          </div>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-cube"></i></span> Apa itu Blockchain?</h2>
+            <p>
+              <span class="drop-cap">B</span>lockchain adalah teknologi buku besar terdistribusi (distributed ledger) yang mencatat transaksi secara aman, transparan, dan permanen dalam blok-blok data yang saling terhubung. Setiap blok berisi sekumpulan transaksi yang divalidasi oleh jaringan node melalui konsensus, dienkripsi secara kriptografis, dan ditautkan ke blok sebelumnya, membentuk rantai yang tidak dapat diubah.
+            </p>
+            <p>
+              Tidak seperti database tradisional yang dikelola oleh otoritas terpusat, blockchain beroperasi secara desentralisasi di mana setiap peserta dalam jaringan memiliki salinan lengkap dari ledger. Ini menghilangkan kebutuhan akan perantara tepercaya dan menciptakan sistem yang tahan terhadap sensor, penipuan, dan kegagalan titik tunggal.
+            </p>
+            
+            <div class="info-card highlight">
+              <div class="info-card-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <div class="info-card-content">
+                <h3>Fakta Penting</h3>
+                <p>Blockchain Bitcoin mengonsumsi energi lebih dari beberapa negara kecil, namun inovasi seperti Proof-of-Stake mengurangi konsumsi energi hingga 99% dibandingkan Proof-of-Work.</p>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-layer-group"></i></span> Cara Kerja Blockchain</h2>
+            <p>
+              Blockchain bekerja melalui proses yang melibatkan beberapa langkah kunci: transaksi, verifikasi, pembuatan blok, validasi konsensus, dan penambahan ke rantai. Setiap transaksi yang dimasukkan ke jaringan blockchain diverifikasi oleh node menggunakan algoritma kriptografi.
+            </p>
+            
+            <div class="workflow-container">
+              <div class="workflow-step">
+                <div class="step-icon">
+                  <span class="step-number">1</span>
+                </div>
+                <div class="step-content">
+                  <h4>Transaksi Dimulai</h4>
+                  <p>Pengguna menginisiasi transaksi yang berisi informasi pengirim, penerima, dan nilai transfer.</p>
+                </div>
+              </div>
+              
+              <div class="workflow-step">
+                <div class="step-icon">
+                  <span class="step-number">2</span>
+                </div>
+                <div class="step-content">
+                  <h4>Verifikasi oleh Node</h4>
+                  <p>Transaksi disiarkan ke jaringan dan diverifikasi oleh node menggunakan kriptografi kunci publik-privat.</p>
+                </div>
+              </div>
+              
+              <div class="workflow-step">
+                <div class="step-icon">
+                  <span class="step-number">3</span>
+                </div>
+                <div class="step-content">
+                  <h4>Pembentukan Blok</h4>
+                  <p>Transaksi yang divalidasi dikelompokkan menjadi blok baru bersama dengan hash dari blok sebelumnya.</p>
+                </div>
+              </div>
+              
+              <div class="workflow-step">
+                <div class="step-icon">
+                  <span class="step-number">4</span>
+                </div>
+                <div class="step-content">
+                  <h4>Mekanisme Konsensus</h4>
+                  <p>Jaringan mencapai konsensus (Proof-of-Work, Proof-of-Stake, dll.) untuk menambahkan blok ke rantai.</p>
+                </div>
+              </div>
+              
+              <div class="workflow-step">
+                <div class="step-icon">
+                  <span class="step-number">5</span>
+                </div>
+                <div class="step-content">
+                  <h4>Penambahan ke Rantai</h4>
+                  <p>Blok yang divalidasi ditambahkan ke blockchain, transaksi dikonfirmasi, dan ledger diperbarui di semua node.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-university"></i></span> Jenis-jenis Blockchain</h2>
+            <div class="blockchain-types">
+              <div class="type-card public">
+                <div class="type-header">
+                  <i class="fas fa-globe"></i>
+                  <h3>Blockchain Publik</h3>
+                </div>
+                <div class="type-content">
+                  <p>Terbuka untuk siapa saja, sepenuhnya terdesentralisasi, transparan. Contoh: Bitcoin, Ethereum.</p>
+                  <ul class="type-features">
+                    <li><i class="fas fa-check"></i> Permissionless</li>
+                    <li><i class="fas fa-check"></i> Transparan</li>
+                    <li><i class="fas fa-check"></i> Desentralisasi penuh</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="type-card private">
+                <div class="type-header">
+                  <i class="fas fa-building"></i>
+                  <h3>Blockchain Private</h3>
+                </div>
+                <div class="type-content">
+                  <p>Dikontrol oleh organisasi tunggal, akses terbatas, lebih cepat. Contoh: Hyperledger Fabric.</p>
+                  <ul class="type-features">
+                    <li><i class="fas fa-check"></i> Permissioned</li>
+                    <li><i class="fas fa-check"></i> Efisien</li>
+                    <li><i class="fas fa-check"></i> Skalabel</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="type-card consortium">
+                <div class="type-header">
+                  <i class="fas fa-handshake"></i>
+                  <h3>Blockchain Consortium</h3>
+                </div>
+                <div class="type-content">
+                  <p>Dikelola oleh grup organisasi, semi-desentralisasi. Contoh: R3 Corda, B3i.</p>
+                  <ul class="type-features">
+                    <li><i class="fas fa-check"></i> Multi-organisasi</li>
+                    <li><i class="fas fa-check"></i> Terpercaya</li>
+                    <li><i class="fas fa-check"></i> Efisiensi tinggi</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="type-card hybrid">
+                <div class="type-header">
+                  <i class="fas fa-blender"></i>
+                  <h3>Blockchain Hybrid</h3>
+                </div>
+                <div class="type-content">
+                  <p>Kombinasi fitur publik dan privat, fleksibel. Contoh: Dragonchain, XinFin.</p>
+                  <ul class="type-features">
+                    <li><i class="fas fa-check"></i> Fleksibel</li>
+                    <li><i class="fas fa-check"></i> Privasi terkelola</li>
+                    <li><i class="fas fa-check"></i> Interoperabel</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-cogs"></i></span> Aplikasi Blockchain di Berbagai Sektor</h2>
+            <div class="sector-grid blockchain-sectors">
+              <div class="sector-card">
+                <div class="sector-icon finance">
+                  <i class="fas fa-coins"></i>
+                </div>
+                <h3>Keuangan & Perbankan</h3>
+                <p>Pembayaran lintas batas, perdagangan aset digital, pinjaman terdesentralisasi (DeFi), dan manajemen identitas finansial.</p>
+                <div class="sector-examples">
+                  <span class="example-tag">Bitcoin</span>
+                  <span class="example-tag">DeFi</span>
+                  <span class="example-tag">CBDC</span>
+                </div>
+              </div>
+              
+              <div class="sector-card">
+                <div class="sector-icon supplychain">
+                  <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3>Rantai Pasokan</h3>
+                <p>Pelacakan produk dari sumber ke konsumen, verifikasi keaslian, pengurangan penipuan, dan otomatisasi logistik.</p>
+                <div class="sector-examples">
+                  <span class="example-tag">IBM Food Trust</span>
+                  <span class="example-tag">VeChain</span>
+                  <span class="example-tag">TradeLens</span>
+                </div>
+              </div>
+              
+              <div class="sector-card">
+                <div class="sector-icon healthcare">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Kesehatan</h3>
+                <p>Manajemen rekam medis yang aman, pelacakan obat, penelitian klinis, dan manajemen identitas pasien.</p>
+                <div class="sector-examples">
+                  <span class="example-tag">Medicalchain</span>
+                  <span class="example-tag">Solve.Care</span>
+                  <span class="example-tag">Burstiq</span>
+                </div>
+              </div>
+              
+              <div class="sector-card">
+                <div class="sector-icon government">
+                  <i class="fas fa-landmark"></i>
+                </div>
+                <h3>Pemerintahan</h3>
+                <p>Pemungutan suara elektronik, registrasi properti, identitas digital, dan transparansi anggaran publik.</p>
+                <div class="sector-examples">
+                  <span class="example-tag">E-Voting</span>
+                  <span class="example-tag">Land Registry</span>
+                  <span class="example-tag">Digital ID</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-file-contract"></i></span> Smart Contracts & Web3</h2>
+            <p>
+              Smart contract adalah program komputer yang secara otomatis mengeksekusi, mengontrol, atau mendokumentasikan peristiwa dan tindakan berdasarkan ketentuan kontrak. Berjalan di atas blockchain, smart contract memungkinkan transaksi yang dapat diverifikasi tanpa perlu perantara.
+            </p>
+            
+            <div class="smart-contract-demo">
+              <div class="contract-code">
+                <div class="code-header">
+                  <span>Solidity Smart Contract Example</span>
+                </div>
+                <pre><code>
+// Simple Payment Contract
+contract PaymentContract {
+    address payable public recipient;
+    uint public paymentAmount;
+    
+    constructor(address payable _recipient, uint _amount) {
+        recipient = _recipient;
+        paymentAmount = _amount;
+    }
+    
+    function releasePayment() public {
+        require(msg.sender == recipient, "Only recipient can release");
+        recipient.transfer(paymentAmount);
+    }
+    
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+}
+                </code></pre>
+              </div>
+              <div class="contract-explanation">
+                <h4>Bagaimana Smart Contract Bekerja</h4>
+                <ol>
+                  <li>Kontrak ditulis dalam bahasa pemrograman seperti Solidity</li>
+                  <li>Dikompilasi menjadi bytecode dan diterapkan ke blockchain</li>
+                  <li>Eksekusi otomatis ketika kondisi terpenuhi</li>
+                  <li>Hasil tercatat secara permanen dan transparan</li>
+                </ol>
+                <div class="web3-info">
+                  <h5><i class="fas fa-cube"></i> Web3 Ecosystem</h5>
+                  <p>Web3 adalah evolusi internet yang dibangun di atas blockchain, menciptakan ekosistem yang terdesentralisasi, terbuka, dan dimiliki pengguna.</p>
+                  <div class="web3-components">
+                    <span>dApps</span>
+                    <span>DAOs</span>
+                    <span>NFTs</span>
+                    <span>DeFi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-balance-scale"></i></span> Kelebihan & Tantangan Blockchain</h2>
+            <div class="pros-cons-container">
+              <div class="pros">
+                <h3><i class="fas fa-thumbs-up"></i> Kelebihan</h3>
+                <div class="pros-list">
+                  <div class="pro-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                      <h4>Keamanan Tinggi</h4>
+                      <p>Data terenkripsi dan didistribusikan, sulit diretas atau dimanipulasi.</p>
+                    </div>
+                  </div>
+                  <div class="pro-item">
+                    <i class="fas fa-eye"></i>
+                    <div>
+                      <h4>Transparansi</h4>
+                      <p>Semua transaksi tercatat dan dapat diverifikasi oleh siapa saja.</p>
+                    </div>
+                  </div>
+                  <div class="pro-item">
+                    <i class="fas fa-user-friends"></i>
+                    <div>
+                      <h4>Desentralisasi</h4>
+                      <p>Tidak bergantung pada otoritas terpusat, mengurangi risiko kegagalan tunggal.</p>
+                    </div>
+                  </div>
+                  <div class="pro-item">
+                    <i class="fas fa-bolt"></i>
+                    <div>
+                      <h4>Efisiensi</h4>
+                      <p>Mengurangi kebutuhan perantara, mempercepat proses, dan menurunkan biaya.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="cons">
+                <h3><i class="fas fa-exclamation-triangle"></i> Tantangan</h3>
+                <div class="cons-list">
+                  <div class="con-item">
+                    <i class="fas fa-bolt"></i>
+                    <div>
+                      <h4>Skalabilitas</h4>
+                      <p>Kapasitas transaksi terbatas, terutama pada blockchain publik seperti Bitcoin.</p>
+                    </div>
+                  </div>
+                  <div class="con-item">
+                    <i class="fas fa-leaf"></i>
+                    <div>
+                      <h4>Konsumsi Energi</h4>
+                      <p>Proof-of-Work membutuhkan daya komputasi dan energi yang signifikan.</p>
+                    </div>
+                  </div>
+                  <div class="con-item">
+                    <i class="fas fa-gavel"></i>
+                    <div>
+                      <h4>Regulasi</h4>
+                      <p>Kerangka hukum yang belum jelas di banyak yurisdiksi.</p>
+                    </div>
+                  </div>
+                  <div class="con-item">
+                    <i class="fas fa-user-secret"></i>
+                    <div>
+                      <h4>Privasi</h4>
+                      <p>Transparansi penuh bisa menjadi masalah untuk data sensitif.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-chart-line"></i></span> Masa Depan Blockchain</h2>
+            <p>
+              Masa depan blockchain akan ditandai dengan interoperabilitas antar blockchain, adopsi skala besar oleh perusahaan dan pemerintah, serta integrasi dengan teknologi seperti AI dan IoT. Layer-2 solutions seperti Lightning Network dan rollups akan mengatasi masalah skalabilitas, sementara blockchain hijau akan mengurangi dampak lingkungan.
+            </p>
+            
+            <div class="future-trends blockchain-future">
+              <div class="trend">
+                <div class="trend-icon">
+                  <i class="fas fa-exchange-alt"></i>
+                </div>
+                <div class="trend-content">
+                  <h4>Interoperabilitas</h4>
+                  <p>Blockchain yang berbeda dapat berkomunikasi dan berbagi data secara seamless.</p>
+                </div>
+              </div>
+              
+              <div class="trend">
+                <div class="trend-icon">
+                  <i class="fas fa-layer-group"></i>
+                </div>
+                <div class="trend-content">
+                  <h4>Layer-2 Solutions</h4>
+                  <p>Solusi di atas blockchain utama untuk meningkatkan throughput dan mengurangi biaya.</p>
+                </div>
+              </div>
+              
+              <div class="trend">
+                <div class="trend-icon">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <div class="trend-content">
+                  <h4>Blockchain Hijau</h4>
+                  <p>Transisi ke mekanisme konsensus yang lebih hemat energi seperti Proof-of-Stake.</p>
+                </div>
+              </div>
+              
+              <div class="trend">
+                <div class="trend-icon">
+                  <i class="fas fa-cube"></i>
+                </div>
+                <div class="trend-content">
+                  <h4>Enterprise Adoption</h4>
+                  <p>Adopsi luas oleh korporasi untuk supply chain, keuangan, dan manajemen data.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        <aside class="article-sidebar">
+          <div class="sidebar-card">
+            <h3><i class="fas fa-history"></i> Timeline Blockchain</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-year">2008</div>
+                <div class="timeline-content">Satoshi Nakamoto mempublikasikan whitepaper Bitcoin</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2009</div>
+                <div class="timeline-content">Bitcoin blockchain diluncurkan, blok genesis ditambang</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2015</div>
+                <div class="timeline-content">Ethereum diluncurkan dengan smart contract capabilities</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2017</div>
+                <div class="timeline-content">Boom ICO (Initial Coin Offering) dan popularitas cryptocurrency</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2021</div>
+                <div class="timeline-content">NFT dan Metaverse mendorong adopsi blockchain mainstream</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-content">Ethereum beralih ke Proof-of-Stake (The Merge)</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sidebar-card">
+            <h3><i class="fas fa-chart-pie"></i> Statistik Blockchain</h3>
+            <div class="stats-container">
+              <div class="stat-item">
+                <div class="stat-bar" style="width: 90%"></div>
+                <span class="stat-label">Bank yang eksplorasi blockchain</span>
+                <span class="stat-value">90%</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-bar" style="width: 65%"></div>
+                <span class="stat-label">Pengurangan biaya transaksi</span>
+                <span class="stat-value">65%</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-bar" style="width: 40%"></div>
+                <span class="stat-label">Perusahaan dengan proyek blockchain</span>
+                <span class="stat-value">40%</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-bar" style="width: 99%"></div>
+                <span class="stat-label">Penghematan energi Ethereum PoS</span>
+                <span class="stat-value">99%</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sidebar-card">
+            <h3><i class="fab fa-bitcoin"></i> Cryptocurrency Teratas</h3>
+            <div class="crypto-list">
+              <div class="crypto-item">
+                <div class="crypto-icon">
+                  <i class="fab fa-bitcoin"></i>
+                </div>
+                <div class="crypto-info">
+                  <span class="crypto-name">Bitcoin (BTC)</span>
+                  <span class="crypto-desc">Digital gold, store of value</span>
+                </div>
+                <span class="crypto-rank">#1</span>
+              </div>
+              <div class="crypto-item">
+                <div class="crypto-icon">
+                  <i class="fab fa-ethereum"></i>
+                </div>
+                <div class="crypto-info">
+                  <span class="crypto-name">Ethereum (ETH)</span>
+                  <span class="crypto-desc">Smart contract platform</span>
+                </div>
+                <span class="crypto-rank">#2</span>
+              </div>
+              <div class="crypto-item">
+                <div class="crypto-icon">
+                  <i class="fas fa-coins"></i>
+                </div>
+                <div class="crypto-info">
+                  <span class="crypto-name">Cardano (ADA)</span>
+                  <span class="crypto-desc">Research-based blockchain</span>
+                </div>
+                <span class="crypto-rank">#3</span>
+              </div>
+              <div class="crypto-item">
+                <div class="crypto-icon">
+                  <i class="fas fa-link"></i>
+                </div>
+                <div class="crypto-info">
+                  <span class="crypto-name">Polkadot (DOT)</span>
+                  <span class="crypto-desc">Multi-chain interoperability</span>
+                </div>
+                <span class="crypto-rank">#4</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sidebar-card newsletter">
+            <h3><i class="fas fa-paper-plane"></i> Blockchain Newsletter</h3>
+            <p>Dapatkan update terbaru tentang perkembangan blockchain, crypto, dan Web3</p>
+            <form class="newsletter-form" id="blockchainNewsletter">
+              <input type="email" placeholder="Email Anda" required>
+              <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <p class="newsletter-note">Bergabung dengan 45.000+ enthusiast blockchain</p>
+          </div>
+        </aside>
+      </div>
+    </article>
+    
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+      <div class="section-header">
+        <h2>Video Penjelasan Blockchain</h2>
+        <p class="section-subtitle">Pahami konsep blockchain melalui visualisasi yang menarik</p>
+      </div>
+      
+      <div class="video-container">
+        <div class="video-player">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/SSo_EIwHSd4/maxresdefault.jpg" alt="Video Thumbnail">
+            <div class="play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Blockchain Technology Explained: Cara Kerja dan Aplikasinya</h3>
+            <div class="video-meta">
+              <span><i class="fas fa-eye"></i> 1.5M views</span>
+              <span><i class="far fa-clock"></i> 18:35</span>
+              <span><i class="far fa-calendar-alt"></i> Feb 2024</span>
+            </div>
+            <p>Video ini menjelaskan konsep dasar blockchain, mekanisme konsensus, smart contracts, dan aplikasi praktis di berbagai industri.</p>
+          </div>
+        </div>
+        
+        <div class="video-playlist">
+          <h4><i class="fas fa-list"></i> Rekomendasi Video Blockchain</h4>
+          <div class="playlist-item">
+            <div class="playlist-thumb">
+              <img src="https://img.youtube.com/vi/bBC-nXj3Ng4/sddefault.jpg" alt="Smart Contracts">
+            </div>
+            <div class="playlist-info">
+              <h5>Smart Contracts untuk Pemula</h5>
+              <span>14:20 • 680K views</span>
+            </div>
+          </div>
+          <div class="playlist-item">
+            <div class="playlist-thumb">
+              <img src="https://img.youtube.com/vi/aQWflNQuP_o/sddefault.jpg" alt="DeFi">
+            </div>
+            <div class="playlist-info">
+              <h5>DeFi: Keuangan Terdesentralisasi</h5>
+              <span>16:45 • 520K views</span>
+            </div>
+          </div>
+          <div class="playlist-item">
+            <div class="playlist-thumb">
+              <img src="https://img.youtube.com/vi/EH6vE97qIP4/sddefault.jpg" alt="NFT">
+            </div>
+            <div class="playlist-info">
+              <h5>NFT: Beyond Digital Art</h5>
+              <span>12:30 • 890K views</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <div style="margin-top:2rem;">
-      <a href="index.html" class="btn-kembali" style="color:var(--primary);text-decoration:underline;">&#8592; Kembali ke Beranda</a>
+    
+    <!-- Related Topics Section -->
+    <section class="topics-section">
+      <div class="section-header">
+        <h2>Topik Teknologi Terkait</h2>
+        <p class="section-subtitle">Pelajari teknologi lain yang berhubungan dengan blockchain</p>
+      </div>
+      
+      <div class="topics-grid">
+        <div class="topic-card" onclick="window.location.href='index.html#artikel'">
+          <div class="topic-card-header ai">
+            <div class="topic-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <span class="topic-tag">AI Integration</span>
+          </div>
+          <div class="topic-card-content">
+            <h3>AI + Blockchain</h3>
+            <p>Integrasi kecerdasan buatan dengan blockchain untuk analisis data terdesentralisasi dan otonomi.</p>
+            <div class="topic-meta">
+              <span><i class="far fa-clock"></i> 9 min read</span>
+              <span><i class="far fa-calendar-alt"></i> Updated 4 days ago</span>
+            </div>
+          </div>
+          <div class="topic-card-footer">
+            <a href="index.html#artikel" class="topic-link">Pelajari AI <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="topic-card" onclick="window.location.href='detail-iot.html'">
+          <div class="topic-card-header iot">
+            <div class="topic-icon">
+              <i class="fas fa-wifi"></i>
+            </div>
+            <span class="topic-tag">Secure IoT</span>
+          </div>
+          <div class="topic-card-content">
+            <h3>Blockchain untuk IoT</h3>
+            <p>Meningkatkan keamanan perangkat IoT dengan ledger terdistribusi dan smart contracts.</p>
+            <div class="topic-meta">
+              <span><i class="far fa-clock"></i> 10 min read</span>
+              <span><i class="far fa-calendar-alt"></i> Updated 1 week ago</span>
+            </div>
+          </div>
+          <div class="topic-card-footer">
+            <a href="detail-iot.html" class="topic-link">Pelajari IoT <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="topic-card" onclick="window.location.href='detail-web3.html'">
+          <div class="topic-card-header web3">
+            <div class="topic-icon">
+              <i class="fas fa-cube"></i>
+            </div>
+            <span class="topic-tag">Future Web</span>
+          </div>
+          <div class="topic-card-content">
+            <h3>Web3 & Metaverse</h3>
+            <p>Evolusi internet berbasis blockchain menuju ekosistem digital yang terdesentralisasi.</p>
+            <div class="topic-meta">
+              <span><i class="far fa-clock"></i> 11 min read</span>
+              <span><i class="far fa-calendar-alt"></i> Updated 3 days ago</span>
+            </div>
+          </div>
+          <div class="topic-card-footer">
+            <a href="detail-web3.html" class="topic-link">Eksplorasi Web3 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="topic-card" onclick="window.location.href='detail-defi.html'">
+          <div class="topic-card-header defi">
+            <div class="topic-icon">
+              <i class="fas fa-coins"></i>
+            </div>
+            <span class="topic-tag">Financial</span>
+          </div>
+          <div class="topic-card-content">
+            <h3>DeFi & Cryptocurrency</h3>
+            <p>Sistem keuangan terdesentralisasi yang mengubah cara kita berinteraksi dengan uang dan aset.</p>
+            <div class="topic-meta">
+              <span><i class="far fa-clock"></i> 8 min read</span>
+              <span><i class="far fa-calendar-alt"></i> Updated 5 days ago</span>
+            </div>
+          </div>
+          <div class="topic-card-footer">
+            <a href="detail-defi.html" class="topic-link">Eksplorasi DeFi <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Resources Section -->
+    <section id="sumber" class="resources-section">
+      <div class="section-header">
+        <h2>Sumber & Referensi Blockchain</h2>
+        <p class="section-subtitle">Material pembelajaran dan bacaan lanjutan tentang teknologi blockchain</p>
+      </div>
+      
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fab fa-wikipedia-w"></i>
+          </div>
+          <h3>Wikipedia Blockchain</h3>
+          <p>Artikel komprehensif tentang konsep, sejarah, teknologi, dan aplikasi blockchain secara global.</p>
+          <a href="https://id.wikipedia.org/wiki/Blockchain" target="_blank" class="resource-link">Kunjungi Sumber <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <h3>Kompas Tekno</h3>
+          <p>Analisis perkembangan blockchain di Indonesia dan penerapannya dalam berbagai sektor industri.</p>
+          <a href="https://tekno.kompas.com/read/2021/06/21/19000067/apa-itu-blockchain" target="_blank" class="resource-link">Baca Artikel <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Kursus Blockchain</h3>
+          <p>Pelajari blockchain melalui kursus dari universitas dan platform edukasi terkemuka dengan sertifikasi.</p>
+          <a href="https://www.coursera.org/specializations/blockchain" target="_blank" class="resource-link">Pelajari Sekarang <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Developer Resources</h3>
+          <p>Dokumentasi, SDK, dan tools untuk pengembang yang ingin membangun di atas blockchain.</p>
+          <a href="https://ethereum.org/en/developers/" target="_blank" class="resource-link">Eksplorasi Tools <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Back to Home Button -->
+    <div class="back-home-container">
+      <a href="index.html" class="back-home-btn">
+        <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+      </a>
+      <div class="article-nav">
+        <a href="detail-iot.html" class="nav-prev">
+          <i class="fas fa-chevron-left"></i> Artikel Sebelumnya
+        </a>
+        <a href="detail-web3.html" class="nav-next">
+          Artikel Selanjutnya <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
     </div>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 TechToday. Dibuat untuk tugas Pemrograman Web I.</p>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <i class="fas fa-microchip"></i> TechToday
+        </div>
+        <p>Platform edukasi teknologi terdepan yang membahas inovasi masa depan dan dampaknya bagi masyarakat.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <div class="link-column">
+          <h4>Kategori</h4>
+          <ul>
+            <li><a href="index.html#artikel">Artificial Intelligence</a></li>
+            <li><a href="detail-iot.html">Internet of Things</a></li>
+            <li><a href="detail-blockchain.html" class="active">Blockchain</a></li>
+            <li><a href="detail-quantum.html">Quantum Computing</a></li>
+            <li><a href="detail-web3.html">Web3 & Metaverse</a></li>
+          </ul>
+        </div>
+        
+        <div class="link-column">
+          <h4>Perusahaan</h4>
+          <ul>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Tim</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+        
+        <div class="link-column">
+          <h4>Newsletter</h4>
+          <p>Dapatkan update teknologi terbaru langsung ke inbox Anda.</p>
+          <form class="footer-newsletter">
+            <input type="email" placeholder="Email Anda" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 TechToday. Dibuat untuk tugas Pemrograman Web I. Semua hak dilindungi.</p>
+      <div class="footer-tech">
+        <span><i class="fas fa-code"></i> Dibangun dengan HTML5, CSS3 & JavaScript</span>
+        <span><i class="fas fa-heart"></i> Dengan semangat untuk teknologi</span>
+      </div>
+    </div>
   </footer>
 
-  <button id="backToTop" title="Kembali ke atas">&#8679;</button>
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Kembali ke atas">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="mobile-logo">
+        <i class="fas fa-microchip"></i> TechToday
+      </div>
+      <button class="mobile-close" id="mobileClose">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav">
+      <li><a href="index.html#artikel"><i class="fas fa-newspaper"></i> Artikel Utama</a></li>
+      <li><a href="index.html#topik"><i class="fas fa-th-large"></i> Topik</a></li>
+      <li><a href="#video"><i class="fas fa-play-circle"></i> Video Blockchain</a></li>
+      <li><a href="#sumber"><i class="fas fa-book"></i> Sumber</a></li>
+      <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+    </ul>
+    <div class="mobile-theme">
+      <span>Mode Gelap</span>
+      <label class="switch">
+        <input type="checkbox" id="mobileThemeToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
   <script src="script.js"></script>
+  <script>
+    // Blockchain-specific JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      // Blockchain-specific animations
+      const blocks = document.querySelectorAll('.block');
+      blocks.forEach((block, index) => {
+        block.style.animationDelay = `${index * 0.4}s`;
+        block.classList.add('animate-in');
+      });
+      
+      // Blockchain newsletter form
+      const blockchainNewsletterForm = document.getElementById('blockchainNewsletter');
+      if (blockchainNewsletterForm) {
+        blockchainNewsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const button = this.querySelector('button');
+          const originalText = button.innerHTML;
+          
+          button.innerHTML = '<i class="fas fa-check"></i> Terdaftar!';
+          button.style.background = 'var(--success)';
+          
+          setTimeout(() => {
+            button.innerHTML = originalText;
+            button.style.background = '';
+            this.reset();
+            
+            // Show success message
+            const successMsg = document.createElement('p');
+            successMsg.className = 'success-message';
+            successMsg.textContent = 'Terima kasih! Anda akan menerima newsletter blockchain kami.';
+            successMsg.style.color = 'var(--success)';
+            successMsg.style.fontSize = '0.9rem';
+            successMsg.style.marginTop = '10px';
+            
+            this.appendChild(successMsg);
+            setTimeout(() => successMsg.remove(), 3000);
+          }, 2000);
+        });
+      }
+      
+      // Share article functionality for blockchain page
+      const shareBtn = document.getElementById('shareArticle');
+      if (shareBtn) {
+        shareBtn.addEventListener('click', function() {
+          if (navigator.share) {
+            navigator.share({
+              title: 'Blockchain Technology - TechToday',
+              text: 'Baca artikel menarik tentang teknologi blockchain dan revolusi ledger terdistribusi',
+              url: window.location.href,
+            })
+            .then(() => console.log('Berhasil membagikan artikel blockchain'))
+            .catch((error) => console.log('Error sharing', error));
+          } else {
+            navigator.clipboard.writeText(window.location.href)
+              .then(() => {
+                alert('Link artikel blockchain berhasil disalin ke clipboard!');
+              })
+              .catch(err => {
+                console.error('Gagal menyalin: ', err);
+              });
+          }
+        });
+      }
+      
+      // Animate blockchain blocks on hover
+      const blockchainBlocks = document.querySelectorAll('.block');
+      blockchainBlocks.forEach(block => {
+        block.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-10px)';
+          this.style.boxShadow = '0 15px 35px rgba(114, 9, 183, 0.3)';
+        });
+        
+        block.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+          this.style.boxShadow = '0 5px 20px rgba(114, 9, 183, 0.2)';
+        });
+      });
+    });
+    
+    // Animate blockchain visualization
+    function animateBlockchainVisual() {
+      const chainConnectors = document.querySelectorAll('.chain-connector');
+      chainConnectors.forEach((connector, index) => {
+        setTimeout(() => {
+          connector.style.width = '100%';
+        }, index * 500);
+      });
+      
+      // Animate nodes
+      const nodes = document.querySelectorAll('.node');
+      nodes.forEach((node, index) => {
+        setTimeout(() => {
+          node.classList.add('connected');
+        }, index * 300 + 1000);
+      });
+    }
+    
+    // Initialize blockchain animations
+    setTimeout(animateBlockchainVisual, 1000);
+  </script>
 </body>
 </html>

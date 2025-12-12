@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quantum Computing - Komputasi Masa Depan | TechToday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Progress Bar -->
+  <div class="progress-bar"></div>
+  
+  <!-- Header dengan Hero Section Khusus Quantum -->
+  <header>
+    <div class="header-overlay"></div>
+    <nav>
+      <div class="logo-container" onclick="window.location.href='index.html'">
+        <div class="logo-icon">
+          <i class="fas fa-microchip"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">TechToday</span>
+          <span class="logo-sub">Future Tech Insights</span>
+        </div>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html#artikel" class="nav-link"><i class="fas fa-newspaper"></i> Artikel</a></li>
+          <li><a href="index.html#video" class="nav-link"><i class="fas fa-play-circle"></i> Video</a></li>
+          <li><a href="index.html#sumber" class="nav-link"><i class="fas fa-book"></i> Sumber</a></li>
+          <li><a href="index.html#topik" class="nav-link"><i class="fas fa-th-large"></i> Topik</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle mobile menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    
+    <!-- Hero Section Khusus Quantum Computing -->
+    <section class="hero quantum-hero">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="tag"><i class="fas fa-atom"></i> Quantum Computing</span>
+          <span class="tag-date"><i class="far fa-calendar-alt"></i> 18 Des 2025</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-highlight">Quantum Computing</span> Era Baru Komputasi Kuantum
+        </h1>
+        <p class="hero-subtitle">
+          Menggunakan prinsip mekanika kuantum untuk mengeksplorasi kemungkinan komputasi yang jauh melampaui batas komputer klasik.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">100Mx</span>
+            <span class="stat-label">Lebih Cepat</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">$1.3T</span>
+            <span class="stat-label">Nilai Pasar 2035</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">Q-Day</span>
+            <span class="stat-label">2030+</span>
+          </div>
+        </div>
+        <a href="#artikel" class="hero-cta">
+          Eksplorasi Quantum <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
+      <div class="hero-visual">
+        <div class="quantum-visual">
+          <div class="quantum-circuit">
+            <div class="qubit qubit-1">
+              <div class="qubit-core"></div>
+              <div class="qubit-state state-0">|0⟩</div>
+              <div class="qubit-state state-1">|1⟩</div>
+              <div class="qubit-superposition"></div>
+            </div>
+            <div class="qubit qubit-2">
+              <div class="qubit-core"></div>
+              <div class="qubit-state state-0">|0⟩</div>
+              <div class="qubit-state state-1">|1⟩</div>
+              <div class="qubit-superposition"></div>
+            </div>
+            <div class="quantum-gate gate-1">
+              <span>H</span>
+            </div>
+            <div class="quantum-gate gate-2">
+              <span>CNOT</span>
+            </div>
+            <div class="circuit-line"></div>
+          </div>
+          <div class="quantum-effects">
+            <div class="quantum-particle particle-1"></div>
+            <div class="quantum-particle particle-2"></div>
+            <div class="quantum-particle particle-3"></div>
+            <div class="wave-function"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <ol>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="index.html#topik">Topik</a></li>
+        <li class="active">Quantum Computing</li>
+      </ol>
+    </nav>
+    
+    <!-- Article Section -->
+    <article id="artikel" class="article-main">
+      <div class="article-header">
+        <div class="article-meta">
+          <div class="author">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Penulis" class="author-img">
+            <div class="author-info">
+              <span class="author-name">Prof. Dr. Arifin Chandra</span>
+              <span class="author-title">Quantum Physicist & Computing Researcher</span>
+            </div>
+          </div>
+          <div class="article-info">
+            <span class="reading-time"><i class="far fa-clock"></i> 15 min read</span>
+            <span class="share-btn" id="shareArticle"><i class="fas fa-share-alt"></i> Share</span>
+          </div>
+        </div>
+        <h1>Quantum Computing: Paradigma Baru dalam Pemecahan Masalah Kompleks</h1>
+        <div class="article-tags">
+          <span class="article-tag"><i class="fas fa-atom"></i> Qubits</span>
+          <span class="article-tag"><i class="fas fa-project-diagram"></i> Superposition</span>
+          <span class="article-tag"><i class="fas fa-link"></i> Entanglement</span>
+          <span class="article-tag"><i class="fas fa-lock"></i> Quantum Cryptography</span>
+        </div>
+      </div>
+      
+      <div class="article-content">
+        <div class="content-main">
+          <div class="featured-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+              alt="Ilustrasi Quantum Computing"
+              class="featured-img"
+            />
+            <div class="image-caption">Prototype quantum processor dengan qubit superconducting dalam lingkungan cryogenic</div>
+          </div>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-atom"></i></span> Revolusi Komputasi Kuantum</h2>
+            <p>
+              <span class="drop-cap">Q</span>uantum Computing adalah paradigma komputasi yang menggunakan prinsip-prinsip mekanika kuantum—seperti superposisi, keterkaitan (entanglement), dan interferensi—untuk memproses informasi. Berbeda dengan bit klasik yang hanya dapat bernilai 0 atau 1, quantum bit (qubit) dapat berada dalam superposisi kedua keadaan secara bersamaan, memungkinkan pemrosesan paralel secara eksponensial.
+            </p>
+            <p>
+              Komputer kuantum memiliki potensi untuk menyelesaikan masalah yang saat ini tidak dapat dipecahkan oleh superkomputer terkuat sekalipun, termasuk simulasi molekul kompleks untuk penemuan obat, optimasi logistik global, dan pemecahan algoritma kriptografi modern.
+            </p>
+            
+            <div class="info-card highlight">
+              <div class="info-card-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <div class="info-card-content">
+                <h3>Fakta Penting</h3>
+                <p>Komputer kuantum 53-qubit Google Sycamore mencapai "quantum supremacy" dengan menyelesaikan perhitungan dalam 200 detik yang akan memakan waktu 10.000 tahun di superkomputer tercepat.</p>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-cube"></i></span> Prinsip Dasar Quantum Computing</h2>
+            <p>
+              Tiga prinsip kunci mendefinisikan komputasi kuantum: superposisi, keterkaitan (entanglement), dan interferensi kuantum. Prinsip-prinsip ini memungkinkan komputer kuantum melakukan perhitungan dengan cara yang fundamentally berbeda dari komputer klasik.
+            </p>
+            
+            <div class="quantum-principles">
+              <div class="principle-card">
+                <div class="principle-visual superposition">
+                  <div class="quantum-sphere"></div>
+                  <div class="state-vectors">
+                    <div class="vector vector-0">|0⟩</div>
+                    <div class="vector vector-1">|1⟩</div>
+                  </div>
+                </div>
+                <div class="principle-content">
+                  <h3><i class="fas fa-layer-group"></i> Superposisi</h3>
+                  <p>Qubit dapat berada dalam keadaan |0⟩ dan |1⟩ secara bersamaan, tidak seperti bit klasik yang hanya satu keadaan.</p>
+                  <div class="principle-formula">|ψ⟩ = α|0⟩ + β|1⟩</div>
+                </div>
+              </div>
+              
+              <div class="principle-card">
+                <div class="principle-visual entanglement">
+                  <div class="entangled-pair">
+                    <div class="entangled-qubit"></div>
+                    <div class="entangled-qubit"></div>
+                    <div class="entanglement-link"></div>
+                  </div>
+                </div>
+                <div class="principle-content">
+                  <h3><i class="fas fa-link"></i> Keterkaitan (Entanglement)</h3>
+                  <p>Qubit dapat terhubung sehingga keadaan satu qubit bergantung pada keadaan qubit lainnya, bahkan dari jarak jauh.</p>
+                  <div class="principle-formula">|ψ⟩ = (|00⟩ + |11⟩)/√2</div>
+                </div>
+              </div>
+              
+              <div class="principle-card">
+                <div class="principle-visual interference">
+                  <div class="wave-pattern">
+                    <div class="wave wave-1"></div>
+                    <div class="wave wave-2"></div>
+                    <div class="interference-pattern"></div>
+                  </div>
+                </div>
+                <div class="principle-content">
+                  <h3><i class="fas fa-wave-square"></i> Interferensi</h3>
+                  <p>Gelombang probabilitas qubit dapat saling memperkuat atau meniadakan, memungkinkan amplifikasi hasil yang benar.</p>
+                  <div class="principle-formula">P = |ψ₁ + ψ₂|²</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-microchip"></i></span> Teknologi Qubit: Pendekatan yang Berbeda</h2>
+            <div class="qubit-technologies">
+              <div class="tech-card">
+                <div class="tech-header superconducting">
+                  <i class="fas fa-snowflake"></i>
+                  <h3>Superconducting Qubits</h3>
+                </div>
+                <div class="tech-content">
+                  <p>Menggunakan sirkuit superkonduktor yang didinginkan mendekati nol mutlak. Digunakan oleh IBM, Google, dan Rigetti.</p>
+                  <div class="tech-specs">
+                    <span><i class="fas fa-temperature-low"></i> 15 mK</span>
+                    <span><i class="fas fa-clock"></i> 100 μs</span>
+                    <span><i class="fas fa-percentage"></i> 99.9%</span>
+                  </div>
+                  <div class="tech-pros-cons">
+                    <div class="pros">
+                      <h4>Kelebihan</h4>
+                      <ul>
+                        <li>Skalabilitas tinggi</li>
+                        <li>Kecepatan gate cepat</li>
+                        <li>Infrastruktur matang</li>
+                      </ul>
+                    </div>
+                    <div class="cons">
+                      <h4>Tantangan</h4>
+                      <ul>
+                        <li>Dingin ekstrem</li>
+                        <li>Error rate tinggi</li>
+                        <li>Kompleks kontrol</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tech-card">
+                <div class="tech-header trapped-ion">
+                  <i class="fas fa-magnet"></i>
+                  <h3>Trapped Ion Qubits</h3>
+                </div>
+                <div class="tech-content">
+                  <p>Atom terperangkap dalam medan elektromagnetik, dimanipulasi dengan laser. Digunakan oleh IonQ dan Honeywell.</p>
+                  <div class="tech-specs">
+                    <span><i class="fas fa-temperature-low"></i> Suhu Ruang</span>
+                    <span><i class="fas fa-clock"></i> 10 s</span>
+                    <span><i class="fas fa-percentage"></i> 99.99%</span>
+                  </div>
+                  <div class="tech-pros-cons">
+                    <div class="pros">
+                      <h4>Kelebihan</h4>
+                      <ul>
+                        <li>Koherensi panjang</li>
+                        <li>Fidelity tinggi</li>
+                        <li>Keterkaitan kuat</li>
+                      </ul>
+                    </div>
+                    <div class="cons">
+                      <h4>Tantangan</h4>
+                      <ul>
+                        <li>Skalabilitas terbatas</li>
+                        <li>Kecepatan lambat</li>
+                        <li>Sistem kompleks</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tech-card">
+                <div class="tech-header topological">
+                  <i class="fas fa-project-diagram"></i>
+                  <h3>Topological Qubits</h3>
+                </div>
+                <div class="tech-content">
+                  <p>Menggunakan partikel anyon dengan sifat topologi yang melindungi dari decoherence. Dikembangkan oleh Microsoft.</p>
+                  <div class="tech-specs">
+                    <span><i class="fas fa-shield-alt"></i> Fault-tolerant</span>
+                    <span><i class="fas fa-infinity"></i> Stabil</span>
+                    <span><i class="fas fa-cube"></i> Eksotis</span>
+                  </div>
+                  <div class="tech-pros-cons">
+                    <div class="pros">
+                      <h4>Kelebihan</h4>
+                      <ul>
+                        <li>Ketahanan error</li>
+                        <li>Stabilitas tinggi</li>
+                        <li>Scalable secara teori</li>
+                      </ul>
+                    </div>
+                    <div class="cons">
+                      <h4>Tantangan</h4>
+                      <ul>
+                        <li>Eksperimental</li>
+                        <li>Material khusus</li>
+                        <li>Belum terbukti</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tech-card">
+                <div class="tech-header photonic">
+                  <i class="fas fa-lightbulb"></i>
+                  <h3>Photonic Qubits</h3>
+                </div>
+                <div class="tech-content">
+                  <p>Menggunakan foton sebagai pembawa informasi kuantum. Dikembangkan oleh PsiQuantum dan Xanadu.</p>
+                  <div class="tech-specs">
+                    <span><i class="fas fa-temperature-low"></i> Suhu Ruang</span>
+                    <span><i class="fas fa-bolt"></i> Sangat Cepat</span>
+                    <span><i class="fas fa-satellite-dish"></i> Jaringan</span>
+                  </div>
+                  <div class="tech-pros-cons">
+                    <div class="pros">
+                      <h4>Kelebihan</h4>
+                      <ul>
+                        <li>Suhu ruang</li>
+                        <li>Kecepatan tinggi</li>
+                        <li>Quantum networking</li>
+                      </ul>
+                    </div>
+                    <div class="cons">
+                      <h4>Tantangan</h4>
+                      <ul>
+                        <li>Deteksi sulit</li>
+                        <li>Interaksi lemah</li>
+                        <li>Skalabilitas</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-cogs"></i></span> Algoritma Kuantum Terkemuka</h2>
+            <div class="algorithms-container">
+              <div class="algorithm-card">
+                <div class="algorithm-header shor">
+                  <h3>Algoritma Shor</h3>
+                  <span class="algorithm-year">1994</span>
+                </div>
+                <div class="algorithm-content">
+                  <p>Memfaktorkan bilangan bulat besar dalam waktu polinomial, mengancam kriptografi RSA modern.</p>
+                  <div class="algorithm-complexity">
+                    <span class="complexity-label">Kompleksitas:</span>
+                    <span class="complexity-value">O((log N)³)</span>
+                  </div>
+                  <div class="algorithm-impact">
+                    <h4>Dampak</h4>
+                    <p>Membuat kriptografi asimetris saat ini tidak aman, mendorong perkembangan kriptografi kuantum.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="algorithm-card">
+                <div class="algorithm-header grover">
+                  <h3>Algoritma Grover</h3>
+                  <span class="algorithm-year">1996</span>
+                </div>
+                <div class="algorithm-content">
+                  <p>Pencarian dalam database tidak terstruktur dengan percepatan kuadratik.</p>
+                  <div class="algorithm-complexity">
+                    <span class="complexity-label">Kompleksitas:</span>
+                    <span class="complexity-value">O(√N)</span>
+                  </div>
+                  <div class="algorithm-impact">
+                    <h4>Dampak</h4>
+                    <p>Optimasi database, machine learning, dan pencarian solusi untuk masalah kompleks.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="algorithm-card">
+                <div class="algorithm-header vqe">
+                  <h3>VQE (Variational Quantum Eigensolver)</h3>
+                  <span class="algorithm-year">2014</span>
+                </div>
+                <div class="algorithm-content">
+                  <p>Menemukan keadaan dasar molekul untuk simulasi material dan penemuan obat.</p>
+                  <div class="algorithm-complexity">
+                    <span class="complexity-label">Tipe:</span>
+                    <span class="complexity-value">Hybrid Quantum-Classical</span>
+                  </div>
+                  <div class="algorithm-impact">
+                    <h4>Dampak</h4>
+                    <p>Revolusi dalam kimia kuantum, desain material baru, dan penemuan obat yang lebih efisien.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="algorithm-card">
+                <div class="algorithm-header qml">
+                  <h3>Quantum Machine Learning</h3>
+                  <span class="algorithm-year">2010+</span>
+                </div>
+                <div class="algorithm-content">
+                  <p>Algoritma ML yang dimodifikasi untuk keuntungan kuantum dalam klasifikasi dan optimasi.</p>
+                  <div class="algorithm-complexity">
+                    <span class="complexity-label">Akselerasi:</span>
+                    <span class="complexity-value">Eksponensial</span>
+                  </div>
+                  <div class="algorithm-impact">
+                    <h4>Dampak</h4>
+                    <p>Pattern recognition yang lebih cepat, optimasi kompleks, dan AI yang lebih powerful.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-industry"></i></span> Aplikasi Praktis Quantum Computing</h2>
+            <div class="applications-timeline">
+              <div class="timeline-phase">
+                <div class="phase-year">2023-2025</div>
+                <div class="phase-content">
+                  <h4>NISQ Era (Noisy Intermediate-Scale Quantum)</h4>
+                  <p>Komputer kuantum dengan 50-100 qubit, terbatas oleh noise dan error. Aplikasi: optimasi, simulasi molekul sederhana, quantum machine learning awal.</p>
+                </div>
+              </div>
+              
+              <div class="timeline-phase">
+                <div class="phase-year">2026-2030</div>
+                <div class="phase-content">
+                  <h4>Fault-Tolerant Quantum Computing</h4>
+                  <p>Komputer kuantum dengan error correction, 100-1000 qubit logis. Aplikasi: kriptografi kuantum, simulasi material kompleks, optimasi finansial.</p>
+                </div>
+              </div>
+              
+              <div class="timeline-phase">
+                <div class="phase-year">2030+</div>
+                <div class="phase-content">
+                  <h4>Quantum Advantage/Supremacy</h4>
+                  <p>Komputer kuantum skala besar yang secara praktis mengungguli komputer klasik untuk masalah tertentu. Aplikasi: penemuan obat revolusioner, AI kuantum, klimatologi.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="application-areas">
+              <div class="area-card">
+                <div class="area-icon">
+                  <i class="fas fa-flask"></i>
+                </div>
+                <div class="area-content">
+                  <h4>Kimia & Material Science</h4>
+                  <p>Simulasi molekul kompleks untuk penemuan obat, katalis efisien, dan material superkonduktor.</p>
+                  <div class="area-impact">Potensi: 50% percepatan penemuan obat</div>
+                </div>
+              </div>
+              
+              <div class="area-card">
+                <div class="area-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="area-content">
+                  <h4>Finansial & Optimasi</h4>
+                  <p>Portfolio optimization, risk analysis, trading algorithms, dan logistik global yang efisien.</p>
+                  <div class="area-impact">Potensi: $1T+ value creation</div>
+                </div>
+              </div>
+              
+              <div class="area-card">
+                <div class="area-icon">
+                  <i class="fas fa-lock"></i>
+                </div>
+                <div class="area-content">
+                  <h4>Keamanan & Kriptografi</h4>
+                  <p>Quantum cryptography (QKD), post-quantum cryptography, dan secure communications.</p>
+                  <div class="area-impact">Kebutuhan: Transisi sebelum Q-Day</div>
+                </div>
+              </div>
+              
+              <div class="area-card">
+                <div class="area-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <div class="area-content">
+                  <h4>AI & Machine Learning</h4>
+                  <p>Quantum-enhanced ML, pattern recognition eksponensial lebih cepat, dan generative models.</p>
+                  <div class="area-impact">Potensi: AI super-intelligent</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-exclamation-triangle"></i></span> Tantangan & Masa Depan</h2>
+            <div class="challenges-container quantum-challenges">
+              <div class="challenge">
+                <h3><i class="fas fa-temperature-low"></i> Decoherence & Noise</h3>
+                <p>Qubit sangat rentan terhadap gangguan lingkungan yang menyebabkan hilangnya informasi kuantum (decoherence).</p>
+                <div class="challenge-progress">
+                  <div class="progress-bar-container">
+                    <div class="progress" style="width: 65%"></div>
+                  </div>
+                  <span>65% teratasi dengan error correction</span>
+                </div>
+              </div>
+              
+              <div class="challenge">
+                <h3><i class="fas fa-expand-alt"></i> Skalabilitas</h3>
+                <p>Menambah jumlah qubit sambil mempertahankan koherensi dan konektivitas merupakan tantangan teknis besar.</p>
+                <div class="challenge-progress">
+                  <div class="progress-bar-container">
+                    <div class="progress" style="width: 40%"></div>
+                  </div>
+                  <span>40% roadmap skalabilitas</span>
+                </div>
+              </div>
+              
+              <div class="challenge">
+                <h3><i class="fas fa-tools"></i> Error Correction</h3>
+                <p>Membutuhkan banyak qubit fisik untuk membuat satu qubit logis yang fault-tolerant (rasio 1000:1).</p>
+                <div class="challenge-progress">
+                  <div class="progress-bar-container">
+                    <div class="progress" style="width: 30%"></div>
+                  </div>
+                  <span>30% perkembangan error correction</span>
+                </div>
+              </div>
+              
+              <div class="challenge">
+                <h3><i class="fas fa-user-graduate"></i> Talent Gap</h3>
+                <p>Kekurangan ahli quantum computing yang menguasai fisika, komputer, dan matematika sekaligus.</p>
+                <div class="challenge-progress">
+                  <div class="progress-bar-container">
+                    <div class="progress" style="width: 25%"></div>
+                  </div>
+                  <span>25% kebutuhan talent terpenuhi</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="quantum-roadmap">
+              <h3><i class="fas fa-road"></i> Roadmap Quantum Computing 2025-2040</h3>
+              <div class="roadmap-timeline">
+                <div class="milestone">
+                  <div class="milestone-year">2025</div>
+                  <div class="milestone-content">100+ qubit processors, aplikasi NISQ awal</div>
+                </div>
+                <div class="milestone">
+                  <div class="milestone-year">2030</div>
+                  <div class="milestone-content">1,000+ qubit, demonstrasi quantum advantage</div>
+                </div>
+                <div class="milestone">
+                  <div class="milestone-year">2035</div>
+                  <div class="milestone-content">Error-corrected quantum computers</div>
+                </div>
+                <div class="milestone">
+                  <div class="milestone-year">2040</div>
+                  <div class="milestone-content">Universal quantum computers, aplikasi masif</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        <aside class="article-sidebar">
+          <div class="sidebar-card">
+            <h3><i class="fas fa-history"></i> Timeline Quantum Computing</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-year">1980</div>
+                <div class="timeline-content">Richard Feynman mengusulkan komputer kuantum</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">1994</div>
+                <div class="timeline-content">Peter Shor menemukan algoritma faktorisasi kuantum</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">1998</div>
+                <div class="timeline-content">Qubit pertama berhasil dibuat (NMR, 2 qubit)</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2011</div>
+                <div class="timeline-content">D-Wave mengumumkan komputer kuantum 128-qubit</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2019</div>
+                <div class="timeline-content">Google mengklaim "quantum supremacy" dengan Sycamore</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-content">IBM mencapai 1.000+ qubit dengan processor Condor</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sidebar-card">
+            <h3><i class="fas fa-chart-pie"></i> Statistik Quantum Computing</h3>
+            <div class="stats-container">
+              <div class="stat-item">
+                <div class="stat-bar" style="width: 75%"></div>
+                <span class="stat-label">Perusahaan Fortune 500 yang mengeksplorasi QC</span>
+                <span class="stat-value">75%</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-bar" style="width: 60%"></div>
+                <span class="stat-label">Investasi pemerintah dalam QC research</span>
+                <span class="stat-value">$60B+</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-bar" style="width: 90%"></div>
+                <span class="stat-label">Algoritma kriptografi yang rentan</span>
+                <span class="stat-value">90%</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-bar" style="width: 1%"></div>
+                <span class="stat-label">QC market share vs classical</span>
+                <span class="stat-value">1%</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sidebar-card">
+            <h3><i class="fas fa-university"></i> Pemain Utama</h3>
+            <div class="players-list">
+              <div class="player">
+                <div class="player-logo ibm">
+                  <i class="fas fa-server"></i>
+                </div>
+                <div class="player-info">
+                  <span class="player-name">IBM Quantum</span>
+                  <span class="player-qubits">1,121 qubits (2023)</span>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player-logo google">
+                  <i class="fab fa-google"></i>
+                </div>
+                <div class="player-info">
+                  <span class="player-name">Google Quantum AI</span>
+                  <span class="player-qubits">72 qubits (Sycamore)</span>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player-logo microsoft">
+                  <i class="fab fa-microsoft"></i>
+                </div>
+                <div class="player-info">
+                  <span class="player-name">Microsoft Azure Quantum</span>
+                  <span class="player-qubits">Topological approach</span>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player-logo ionq">
+                  <i class="fas fa-magnet"></i>
+                </div>
+                <div class="player-info">
+                  <span class="player-name">IonQ</span>
+                  <span class="player-qubits">29 qubits (trapped ion)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sidebar-card newsletter">
+            <h3><i class="fas fa-paper-plane"></i> Quantum Newsletter</h3>
+            <p>Dapatkan update terbaru tentang perkembangan quantum computing dan teknologi masa depan</p>
+            <form class="newsletter-form" id="quantumNewsletter">
+              <input type="email" placeholder="Email Anda" required>
+              <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <p class="newsletter-note">Bergabung dengan 25.000+ quantum enthusiasts</p>
+          </div>
+        </aside>
+      </div>
+    </article>
+    
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+      <div class="section-header">
+        <h2>Video Penjelasan Quantum Computing</h2>
+        <p class="section-subtitle">Pahami konsep quantum computing melalui visualisasi yang menarik</p>
+      </div>
+      
+      <div class="video-container">
+        <div class="video-player">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/JhHMJCUmq28/maxresdefault.jpg" alt="Video Thumbnail">
+            <div class="play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Quantum Computing Explained: Dari Qubit hingga Quantum Supremacy</h3>
+            <div class="video-meta">
+              <span><i class="fas fa-eye"></i> 2.1M views</span>
+              <span><i class="far fa-clock"></i> 22:15</span>
+              <span><i class="far fa-calendar-alt"></i> Jan 2024</span>
+            </div>
+            <p>Video ini menjelaskan konsep dasar quantum computing, prinsip superposisi dan entanglement, serta implikasinya bagi masa depan teknologi.</p>
+          </div>
+        </div>
+        
+        <div class="video-playlist">
+          <h4><i class="fas fa-list"></i> Rekomendasi Video Quantum</h4>
+          <div class="playlist-item">
+            <div class="playlist-thumb">
+              <img src="https://img.youtube.com/vi/OWJCfOvochA/sddefault.jpg" alt="Qubits Explained">
+            </div>
+            <div class="playlist-info">
+              <h5>Qubit: Bit Kuantum yang Mengubah Segalanya</h5>
+              <span>15:30 • 890K views</span>
+            </div>
+          </div>
+          <div class="playlist-item">
+            <div class="playlist-thumb">
+              <img src="https://img.youtube.com/vi/g_IaVepNDT4/sddefault.jpg" alt="Quantum Algorithms">
+            </div>
+            <div class="playlist-info">
+              <h5>Algoritma Kuantum untuk Pemula</h5>
+              <span>18:45 • 540K views</span>
+            </div>
+          </div>
+          <div class="playlist-item">
+            <div class="playlist-thumb">
+              <img src="https://img.youtube.com/vi/u1XXjWr5frE/sddefault.jpg" alt="Quantum Cryptography">
+            </div>
+            <div class="playlist-info">
+              <h5>Kriptografi Pasca-Kuantum</h5>
+              <span>20:10 • 420K views</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Related Topics Section -->
+    <section class="topics-section">
+      <div class="section-header">
+        <h2>Topik Teknologi Terkait</h2>
+        <p class="section-subtitle">Pelajari teknologi lain yang berhubungan dengan quantum computing</p>
+      </div>
+      
+      <div class="topics-grid">
+        <div class="topic-card" onclick="window.location.href='index.html#artikel'">
+          <div class="topic-card-header ai">
+            <div class="topic-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <span class="topic-tag">AI Integration</span>
+          </div>
+          <div class="topic-card-content">
+            <h3>Quantum AI</h3>
+            <p>Integrasi quantum computing dengan AI untuk machine learning eksponensial lebih cepat dan pattern recognition.</p>
+            <div class="topic-meta">
+              <span><i class="far fa-clock"></i> 11 min read</span>
+              <span><i class="far fa-calendar-alt"></i> Updated 5 days ago</span>
+            </div>
+          </div>
+          <div class="topic-card-footer">
+            <a href="index.html#artikel" class="topic-link">Pelajari AI <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="topic-card" onclick="window.location.href='detail-blockchain.html'">
+          <div class="topic-card-header blockchain">
+            <div class="topic-icon">
+              <i class="fas fa-link"></i>
+            </div>
+            <span class="topic-tag">Security</span>
+          </div>
+          <div class="topic-card-content">
+            <h3>Quantum vs Blockchain</h3>
+            <p>Dampak quantum computing terhadap keamanan blockchain dan perkembangan post-quantum cryptography.</p>
+            <div class="topic-meta">
+              <span><i class="far fa-clock"></i> 9 min read</span>
+              <span><i class="far fa-calendar-alt"></i> Updated 1 week ago</span>
+            </div>
+          </div>
+          <div class="topic-card-footer">
+            <a href="detail-blockchain.html" class="topic-link">Pelajari Blockchain <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="topic-card" onclick="window.location.href='detail-crypto.html'">
+          <div class="topic-card-header crypto">
+            <div class="topic-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <span class="topic-tag">Post-Quantum</span>
+          </div>
+          <div class="topic-card-content">
+            <h3>Quantum Cryptography</h3>
+            <p>Teknik enkripsi yang aman dari serangan quantum computer dan transisi ke post-quantum cryptography.</p>
+            <div class="topic-meta">
+              <span><i class="far fa-clock"></i> 10 min read</span>
+              <span><i class="far fa-calendar-alt"></i> Updated 3 days ago</span>
+            </div>
+          </div>
+          <div class="topic-card-footer">
+            <a href="detail-crypto.html" class="topic-link">Eksplorasi Crypto <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="topic-card" onclick="window.location.href='detail-simulation.html'">
+          <div class="topic-card-header simulation">
+            <div class="topic-icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <span class="topic-tag">Science</span>
+          </div>
+          <div class="topic-card-content">
+            <h3>Quantum Simulation</h3>
+            <p>Simulasi sistem kuantum kompleks untuk penemuan material baru, obat, dan pemahaman alam semesta.</p>
+            <div class="topic-meta">
+              <span><i class="far fa-clock"></i> 12 min read</span>
+              <span><i class="far fa-calendar-alt"></i> Updated 4 days ago</span>
+            </div>
+          </div>
+          <div class="topic-card-footer">
+            <a href="detail-simulation.html" class="topic-link">Eksplorasi Simulasi <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Resources Section -->
+    <section id="sumber" class="resources-section">
+      <div class="section-header">
+        <h2>Sumber & Referensi Quantum Computing</h2>
+        <p class="section-subtitle">Material pembelajaran dan bacaan lanjutan tentang teknologi quantum computing</p>
+      </div>
+      
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fab fa-wikipedia-w"></i>
+          </div>
+          <h3>Wikipedia Quantum</h3>
+          <p>Artikel komprehensif tentang konsep, sejarah, teknologi, dan perkembangan quantum computing global.</p>
+          <a href="https://id.wikipedia.org/wiki/Komputer_kuantum" target="_blank" class="resource-link">Kunjungi Sumber <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <h3>Jurnal Ilmiah</h3>
+          <p>Paper penelitian terbaru tentang perkembangan quantum computing dari Nature, Science, dan Physical Review.</p>
+          <a href="https://www.nature.com/subjects/quantum-computing" target="_blank" class="resource-link">Baca Penelitian <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Kursus Quantum</h3>
+          <p>Pelajari quantum computing melalui kursus dari MIT, Stanford, dan platform edukasi quantum terkemuka.</p>
+          <a href="https://qiskit.org/learn" target="_blank" class="resource-link">Pelajari Sekarang <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Quantum Programming</h3>
+          <p>Framework dan tools untuk pemrograman quantum seperti Qiskit (IBM), Cirq (Google), dan Q# (Microsoft).</p>
+          <a href="https://quantum-computing.ibm.com/" target="_blank" class="resource-link">Eksplorasi Tools <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Back to Home Button -->
+    <div class="back-home-container">
+      <a href="index.html" class="back-home-btn">
+        <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+      </a>
+      <div class="article-nav">
+        <a href="detail-blockchain.html" class="nav-prev">
+          <i class="fas fa-chevron-left"></i> Artikel Sebelumnya
+        </a>
+        <a href="detail-metaverse.html" class="nav-next">
+          Artikel Selanjutnya <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <i class="fas fa-microchip"></i> TechToday
+        </div>
+        <p>Platform edukasi teknologi terdepan yang membahas inovasi masa depan dan dampaknya bagi masyarakat.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <div class="link-column">
+          <h4>Kategori</h4>
+          <ul>
+            <li><a href="index.html#artikel">Artificial Intelligence</a></li>
+            <li><a href="detail-iot.html">Internet of Things</a></li>
+            <li><a href="detail-blockchain.html">Blockchain</a></li>
+            <li><a href="detail-quantum.html" class="active">Quantum Computing</a></li>
+            <li><a href="detail-metaverse.html">Metaverse & XR</a></li>
+          </ul>
+        </div>
+        
+        <div class="link-column">
+          <h4>Perusahaan</h4>
+          <ul>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Tim</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+        
+        <div class="link-column">
+          <h4>Newsletter</h4>
+          <p>Dapatkan update teknologi terbaru langsung ke inbox Anda.</p>
+          <form class="footer-newsletter">
+            <input type="email" placeholder="Email Anda" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 TechToday. Dibuat untuk tugas Pemrograman Web I. Semua hak dilindungi.</p>
+      <div class="footer-tech">
+        <span><i class="fas fa-code"></i> Dibangun dengan HTML5, CSS3 & JavaScript</span>
+        <span><i class="fas fa-heart"></i> Dengan semangat untuk teknologi</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Kembali ke atas">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="mobile-logo">
+        <i class="fas fa-microchip"></i> TechToday
+      </div>
+      <button class="mobile-close" id="mobileClose">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav">
+      <li><a href="index.html#artikel"><i class="fas fa-newspaper"></i> Artikel Utama</a></li>
+      <li><a href="index.html#topik"><i class="fas fa-th-large"></i> Topik</a></li>
+      <li><a href="#video"><i class="fas fa-play-circle"></i> Video Quantum</a></li>
+      <li><a href="#sumber"><i class="fas fa-book"></i> Sumber</a></li>
+      <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+    </ul>
+    <div class="mobile-theme">
+      <span>Mode Gelap</span>
+      <label class="switch">
+        <input type="checkbox" id="mobileThemeToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Quantum-specific JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      // Quantum-specific animations
+      const qubits = document.querySelectorAll('.qubit');
+      qubits.forEach((qubit, index) => {
+        qubit.style.animationDelay = `${index * 0.3}s`;
+        qubit.classList.add('animate-in');
+      });
+      
+      // Quantum newsletter form
+      const quantumNewsletterForm = document.getElementById('quantumNewsletter');
+      if (quantumNewsletterForm) {
+        quantumNewsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const button = this.querySelector('button');
+          const originalText = button.innerHTML;
+          
+          button.innerHTML = '<i class="fas fa-check"></i> Terdaftar!';
+          button.style.background = 'var(--success)';
+          
+          setTimeout(() => {
+            button.innerHTML = originalText;
+            button.style.background = '';
+            this.reset();
+            
+            // Show success message
+            const successMsg = document.createElement('p');
+            successMsg.className = 'success-message';
+            successMsg.textContent = 'Terima kasih! Anda akan menerima newsletter quantum kami.';
+            successMsg.style.color = 'var(--success)';
+            successMsg.style.fontSize = '0.9rem';
+            successMsg.style.marginTop = '10px';
+            
+            this.appendChild(successMsg);
+            setTimeout(() => successMsg.remove(), 3000);
+          }, 2000);
+        });
+      }
+      
+      // Share article functionality for quantum page
+      const shareBtn = document.getElementById('shareArticle');
+      if (shareBtn) {
+        shareBtn.addEventListener('click', function() {
+          if (navigator.share) {
+            navigator.share({
+              title: 'Quantum Computing - TechToday',
+              text: 'Baca artikel menarik tentang quantum computing dan revolusi komputasi masa depan',
+              url: window.location.href,
+            })
+            .then(() => console.log('Berhasil membagikan artikel quantum'))
+            .catch((error) => console.log('Error sharing', error));
+          } else {
+            navigator.clipboard.writeText(window.location.href)
+              .then(() => {
+                alert('Link artikel quantum computing berhasil disalin ke clipboard!');
+              })
+              .catch(err => {
+                console.error('Gagal menyalin: ', err);
+              });
+          }
+        });
+      }
+      
+      // Animate quantum particles
+      const particles = document.querySelectorAll('.quantum-particle');
+      particles.forEach(particle => {
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
+        particle.style.animationDelay = `${Math.random() * 2}s`;
+      });
+    });
+    
+    // Quantum visualization animation
+    function animateQuantumVisual() {
+      // Animate superposition
+      const superpositions = document.querySelectorAll('.qubit-superposition');
+      superpositions.forEach((superposition, index) => {
+        setTimeout(() => {
+          superposition.style.transform = 'scale(1)';
+          superposition.style.opacity = '0.6';
+        }, index * 400);
+      });
+      
+      // Animate circuit line
+      const circuitLine = document.querySelector('.circuit-line');
+      if (circuitLine) {
+        setTimeout(() => {
+          circuitLine.style.width = '100%';
+        }, 800);
+      }
+      
+      // Animate quantum gates
+      const gates = document.querySelectorAll('.quantum-gate');
+      gates.forEach((gate, index) => {
+        setTimeout(() => {
+          gate.style.transform = 'scale(1)';
+          gate.style.opacity = '1';
+        }, index * 300 + 500);
+      });
+    }
+    
+    // Initialize quantum animations
+    setTimeout(animateQuantumVisual, 1000);
+    
+    // Interactive qubit states
+    const qubitElements = document.querySelectorAll('.qubit');
+    qubitElements.forEach(qubit => {
+      qubit.addEventListener('mouseenter', function() {
+        const superposition = this.querySelector('.qubit-superposition');
+        superposition.style.transform = 'scale(1.2)';
+        superposition.style.opacity = '0.8';
+      });
+      
+      qubit.addEventListener('mouseleave', function() {
+        const superposition = this.querySelector('.qubit-superposition');
+        superposition.style.transform = 'scale(1)';
+        superposition.style.opacity = '0.6';
+      });
+      
+      // Click to "measure" qubit
+      qubit.addEventListener('click', function() {
+        const states = this.querySelectorAll('.qubit-state');
+        const superposition = this.querySelector('.qubit-superposition');
+        
+        // Collapse superposition
+        superposition.style.opacity = '0';
+        
+        // Randomly choose state (quantum measurement)
+        const randomState = Math.random() > 0.5 ? 0 : 1;
+        
+        // Highlight chosen state
+        states.forEach((state, index) => {
+          if (index === randomState) {
+            state.style.transform = 'scale(1.3)';
+            state.style.color = '#ff0054';
+            state.style.fontWeight = 'bold';
+          } else {
+            state.style.opacity = '0.3';
+          }
+        });
+        
+        // Reset after 2 seconds
+        setTimeout(() => {
+          superposition.style.opacity = '0.6';
+          states.forEach(state => {
+            state.style.transform = 'scale(1)';
+            state.style.color = '';
+            state.style.fontWeight = '';
+            state.style.opacity = '1';
+          });
+        }, 2000);
+      });
+    });
+  </script>
+</body>
+</html>

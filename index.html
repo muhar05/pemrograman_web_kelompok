@@ -3,139 +3,780 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Teknologi Masa Kini: AI dan Masa Depan</title>
+    <title>TechToday: AI, IoT & Blockchain - Teknologi Masa Depan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">TechToday</div>
-        <ul>
-          <li><a href="#artikel">Artikel</a></li>
-          <li><a href="#video">Video</a></li>
-          <li><a href="#sumber">Sumber</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
 
-    <main>
-      <article id="artikel">
-        <h1>Artificial Intelligence: Mengubah Dunia Teknologi</h1>
-        <img
-          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
-          alt="Ilustrasi AI"
-          class="artikel-img"
-        />
-        <section>
-          <p>
-            Artificial Intelligence (AI) kini menjadi topik hangat di dunia
-            teknologi. AI telah mengubah cara kita bekerja, belajar, dan
-            berinteraksi dengan teknologi. Mulai dari asisten virtual hingga
-            mobil otonom, AI terus berkembang pesat dan membawa dampak besar
-            bagi kehidupan manusia.
-          </p>
-          <p>
-            Salah satu contoh penerapan AI adalah pada
-            <strong>machine learning</strong> yang memungkinkan komputer belajar
-            dari data tanpa diprogram secara eksplisit. Teknologi ini digunakan
-            dalam berbagai bidang seperti kesehatan, keuangan, hingga hiburan.
-          </p>
-        </section>
-        <aside>
-          <h2>Fakta Singkat</h2>
-          <ul>
-            <li>AI pertama kali diperkenalkan pada tahun 1956.</li>
+    <!-- Header dengan Hero Section -->
+    <header>
+      <div class="header-overlay"></div>
+      <nav>
+        <div class="logo-container">
+          <div class="logo-icon">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-main">TechToday</span>
+            <span class="logo-sub">Future Tech Insights</span>
+          </div>
+        </div>
+        <div class="nav-right">
+          <ul class="nav-links">
             <li>
-              AI digunakan dalam aplikasi sehari-hari seperti Google Maps dan
-              Netflix.
+              <a href="#artikel" class="nav-link"
+                ><i class="fas fa-newspaper"></i> Artikel</a
+              >
             </li>
             <li>
-              Diprediksi, AI akan menciptakan jutaan lapangan kerja baru di masa
-              depan.
+              <a href="#video" class="nav-link"
+                ><i class="fas fa-play-circle"></i> Video</a
+              >
+            </li>
+            <li>
+              <a href="#sumber" class="nav-link"
+                ><i class="fas fa-book"></i> Sumber</a
+              >
+            </li>
+            <li>
+              <a href="#topik" class="nav-link"
+                ><i class="fas fa-th-large"></i> Topik</a
+              >
             </li>
           </ul>
-        </aside>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle mobile menu"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="tag">Trending</span>
+            <span class="tag-date"
+              ><i class="far fa-calendar-alt"></i> 12 Des 2025</span
+            >
+          </div>
+          <h1 class="hero-title">
+            <span class="hero-highlight">Artificial Intelligence</span> Mengubah
+            Lanskap Teknologi Global
+          </h1>
+          <p class="hero-subtitle">
+            Dari pembelajaran mesin hingga generasi konten kreatif, AI telah
+            menjadi katalis utama dalam evolusi digital abad ke-21.
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">87%</span>
+              <span class="stat-label">Perusahaan Adopsi AI</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">$1.8T</span>
+              <span class="stat-label">Nilai Pasar 2030</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">+97 Jt</span>
+              <span class="stat-label">Pekerjaan Baru</span>
+            </div>
+          </div>
+          <a href="#artikel" class="hero-cta">
+            Jelajahi Artikel <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-shape shape-1"></div>
+          <div class="floating-shape shape-2"></div>
+          <div class="floating-shape shape-3"></div>
+          <div class="ai-visual">
+            <div class="neural-node node-1"></div>
+            <div class="neural-node node-2"></div>
+            <div class="neural-node node-3"></div>
+            <div class="neural-node node-4"></div>
+            <div class="neural-connection"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb">
+        <ol>
+          <li>
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li><a href="#">Teknologi</a></li>
+          <li class="active">Artificial Intelligence</li>
+        </ol>
+      </nav>
+
+      <!-- Article Section -->
+      <article id="artikel" class="article-main">
+        <div class="article-header">
+          <div class="article-meta">
+            <div class="author">
+              <img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80"
+                alt="Penulis"
+                class="author-img"
+              />
+              <div class="author-info">
+                <span class="author-name">Dr. Andi Wijaya</span>
+                <span class="author-title">AI Researcher & Tech Analyst</span>
+              </div>
+            </div>
+            <div class="article-info">
+              <span class="reading-time"
+                ><i class="far fa-clock"></i> 8 min read</span
+              >
+              <span class="share-btn"
+                ><i class="fas fa-share-alt"></i> Share</span
+              >
+            </div>
+          </div>
+          <h1>Artificial Intelligence: Revolusi Teknologi Abad Ke-21</h1>
+          <div class="article-tags">
+            <span class="article-tag"
+              ><i class="fas fa-robot"></i> Machine Learning</span
+            >
+            <span class="article-tag"
+              ><i class="fas fa-brain"></i> Neural Networks</span
+            >
+            <span class="article-tag"
+              ><i class="fas fa-chart-line"></i> Future Tech</span
+            >
+          </div>
+        </div>
+
+        <div class="article-content">
+          <div class="content-main">
+            <div class="featured-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                alt="Ilustrasi AI Modern"
+                class="featured-img"
+              />
+              <div class="image-caption">
+                Ilustrasi jaringan neural AI yang memproses data secara
+                real-time
+              </div>
+            </div>
+
+            <section class="article-section">
+              <h2>
+                <span class="section-icon"><i class="fas fa-bolt"></i></span>
+                Transformasi Digital oleh AI
+              </h2>
+              <p>
+                <span class="drop-cap">A</span>rtificial Intelligence (AI) telah
+                berevolusi dari sekadar konsep akademis menjadi tulang punggung
+                transformasi digital global. Dalam dekade terakhir, kemajuan
+                pesat dalam <strong>machine learning</strong>,
+                <strong>pemrosesan bahasa alami</strong>, dan
+                <strong>computer vision</strong> telah mendorong adopsi AI di
+                hampir semua sektor industri.
+              </p>
+              <p>
+                AI tidak lagi terbatas pada laboratorium penelitian atau
+                perusahaan teknologi raksasa. Saat ini, usaha kecil dan menengah
+                pun memanfaatkan teknologi ini untuk meningkatkan efisiensi
+                operasional, personalisasi layanan, dan pengambilan keputusan
+                berbasis data.
+              </p>
+
+              <div class="info-card highlight">
+                <div class="info-card-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="info-card-content">
+                  <h3>Fakta Penting</h3>
+                  <p>
+                    Menurut McKinsey, perusahaan yang mengadopsi AI secara
+                    komprehensif melaporkan peningkatan profit margin hingga
+                    5-10% dibandingkan kompetitor mereka.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="article-section">
+              <h2>
+                <span class="section-icon"><i class="fas fa-cogs"></i></span>
+                Machine Learning & Deep Learning
+              </h2>
+              <p>
+                Machine Learning (ML) merupakan subset AI yang memungkinkan
+                sistem belajar dan meningkatkan performa dari pengalaman tanpa
+                pemrograman eksplisit. Teknik ini mengandalkan algoritma yang
+                mengidentifikasi pola dalam data dan membuat prediksi atau
+                keputusan.
+              </p>
+
+              <div class="columns">
+                <div class="column">
+                  <h3><i class="fas fa-chart-bar"></i> Supervised Learning</h3>
+                  <p>
+                    Algoritma belajar dari data berlabel. Contoh aplikasi:
+                    deteksi spam, klasifikasi gambar, prediksi harga.
+                  </p>
+                </div>
+                <div class="column">
+                  <h3>
+                    <i class="fas fa-project-diagram"></i> Unsupervised Learning
+                  </h3>
+                  <p>
+                    Menemukan pola dalam data tak berlabel. Contoh aplikasi:
+                    segmentasi pasar, analisis perilaku pengguna.
+                  </p>
+                </div>
+                <div class="column">
+                  <h3><i class="fas fa-brain"></i> Deep Learning</h3>
+                  <p>
+                    Jaringan neural dalam yang meniru otak manusia. Contoh
+                    aplikasi: pengenalan suara, mobil otonom.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="article-section">
+              <h2>
+                <span class="section-icon"
+                  ><i class="fas fa-industry"></i
+                ></span>
+                Aplikasi AI di Berbagai Sektor
+              </h2>
+              <div class="sector-grid">
+                <div class="sector-card">
+                  <div class="sector-icon healthcare">
+                    <i class="fas fa-heartbeat"></i>
+                  </div>
+                  <h3>Kesehatan</h3>
+                  <p>
+                    Diagnosis penyakit, penemuan obat, robot bedah, dan
+                    personalisasi perawatan kesehatan.
+                  </p>
+                </div>
+                <div class="sector-card">
+                  <div class="sector-icon finance">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <h3>Keuangan</h3>
+                  <p>
+                    Deteksi penipuan, trading algoritmik, analisis risiko, dan
+                    layanan customer service otomatis.
+                  </p>
+                </div>
+                <div class="sector-card">
+                  <div class="sector-icon education">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <h3>Pendidikan</h3>
+                  <p>
+                    Pembelajaran adaptif, automated grading, tutoring virtual,
+                    dan konten pendidikan personal.
+                  </p>
+                </div>
+                <div class="sector-card">
+                  <div class="sector-icon transportation">
+                    <i class="fas fa-car"></i>
+                  </div>
+                  <h3>Transportasi</h3>
+                  <p>
+                    Kendaraan otonom, manajemen lalu lintas, prediksi perawatan,
+                    dan optimasi rute.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <aside class="article-sidebar">
+            <div class="sidebar-card">
+              <h3><i class="fas fa-history"></i> Timeline AI</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-year">1956</div>
+                  <div class="timeline-content">
+                    Istilah "Artificial Intelligence" diperkenalkan dalam
+                    konferensi Dartmouth
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">1997</div>
+                  <div class="timeline-content">
+                    Deep Blue mengalahkan juara catur dunia Garry Kasparov
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2011</div>
+                  <div class="timeline-content">
+                    IBM Watson memenangkan Jeopardy! melawan juara manusia
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2016</div>
+                  <div class="timeline-content">
+                    AlphaGo mengalahkan juara Go Lee Sedol
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2022</div>
+                  <div class="timeline-content">
+                    ChatGPT dirilis, mempopulerkan AI generatif
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3><i class="fas fa-chart-pie"></i> Statistik AI Global</h3>
+              <div class="stats-container">
+                <div class="stat-item">
+                  <div class="stat-bar" style="width: 85%"></div>
+                  <span class="stat-label">Perusahaan yang mengadopsi AI</span>
+                  <span class="stat-value">85%</span>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-bar" style="width: 62%"></div>
+                  <span class="stat-label">Organisasi dengan strategi AI</span>
+                  <span class="stat-value">62%</span>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-bar" style="width: 74%"></div>
+                  <span class="stat-label">Peningkatan produktivitas</span>
+                  <span class="stat-value">74%</span>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-bar" style="width: 90%"></div>
+                  <span class="stat-label"
+                    >Pengguna terpapar AI sehari-hari</span
+                  >
+                  <span class="stat-value">90%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-card newsletter">
+              <h3><i class="fas fa-paper-plane"></i> Tech Newsletter</h3>
+              <p>Dapatkan insight teknologi terkini langsung ke inbox Anda</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Email Anda" required />
+                <button type="submit">
+                  Subscribe <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+              <p class="newsletter-note">
+                Bergabung dengan 50.000+ profesional teknologi
+              </p>
+            </div>
+          </aside>
+        </div>
       </article>
 
-      <section class="card-list">
-        <div class="card" onclick="window.location.href='detail-iot.html'">
-          <img
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80"
-            alt="IoT"
-          />
-          <div class="card-content">
-            <h3>Internet of Things</h3>
-            <p>
-              IoT menghubungkan perangkat di sekitar kita untuk kehidupan lebih
-              mudah.
-            </p>
-            <a href="detail-iot.html">Baca Selengkapnya</a>
-          </div>
+      <!-- Topic Cards Section -->
+      <section id="topik" class="topics-section">
+        <div class="section-header">
+          <h2>Eksplorasi Teknologi Terkait</h2>
+          <p class="section-subtitle">
+            Temukan topik teknologi masa depan yang mengubah dunia
+          </p>
         </div>
-        <div
-          class="card"
-          onclick="window.location.href='detail-blockchain.html'"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
-            alt="Blockchain"
-          />
-          <div class="card-content">
-            <h3>Blockchain</h3>
-            <p>
-              Teknologi blockchain sebagai pondasi keamanan data masa depan.
-            </p>
-            <a href="detail-blockchain.html">Baca Selengkapnya</a>
+
+        <div class="topics-grid">
+          <div
+            class="topic-card"
+            onclick="window.location.href='detail-iot.html'"
+          >
+            <div class="topic-card-header iot">
+              <div class="topic-icon">
+                <i class="fas fa-wifi"></i>
+              </div>
+              <span class="topic-tag">Trending</span>
+            </div>
+            <div class="topic-card-content">
+              <h3>Internet of Things</h3>
+              <p>
+                Jaringan perangkat yang terhubung mengubah rumah, kota, dan
+                industri menjadi lebih cerdas dan efisien.
+              </p>
+              <div class="topic-meta">
+                <span><i class="far fa-clock"></i> 5 min read</span>
+                <span
+                  ><i class="far fa-calendar-alt"></i> Updated 2 days ago</span
+                >
+              </div>
+            </div>
+            <div class="topic-card-footer">
+              <a href="detail-iot.html" class="topic-link"
+                >Jelajahi IoT <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div
+            class="topic-card"
+            onclick="window.location.href='detail-blockchain.html'"
+          >
+            <div class="topic-card-header blockchain">
+              <div class="topic-icon">
+                <i class="fas fa-link"></i>
+              </div>
+              <span class="topic-tag">Hot</span>
+            </div>
+            <div class="topic-card-content">
+              <h3>Blockchain & Web3</h3>
+              <p>
+                Teknologi ledger terdistribusi yang membangun fondasi untuk
+                internet yang lebih terbuka dan terdesentralisasi.
+              </p>
+              <div class="topic-meta">
+                <span><i class="far fa-clock"></i> 7 min read</span>
+                <span
+                  ><i class="far fa-calendar-alt"></i> Updated 1 week ago</span
+                >
+              </div>
+            </div>
+            <div class="topic-card-footer">
+              <a href="detail-blockchain.html" class="topic-link"
+                >Pelajari Blockchain <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div
+            class="topic-card"
+            onclick="window.location.href='detail-quantum.html'"
+          >
+            <div class="topic-card-header quantum">
+              <div class="topic-icon">
+                <i class="fas fa-atom"></i>
+              </div>
+              <span class="topic-tag">Emerging</span>
+            </div>
+            <div class="topic-card-content">
+              <h3>Quantum Computing</h3>
+              <p>
+                Komputasi kuantum membuka era baru kemampuan komputasi yang
+                melampaui batas komputer klasik.
+              </p>
+              <div class="topic-meta">
+                <span><i class="far fa-clock"></i> 10 min read</span>
+                <span
+                  ><i class="far fa-calendar-alt"></i> Updated 3 days ago</span
+                >
+              </div>
+            </div>
+            <div class="topic-card-footer">
+              <a href="detail-quantum.html" class="topic-link"
+                >Eksplorasi Kuantum <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- Video Section -->
       <section id="video" class="video-section">
-        <h2>Video Terkait: Apa itu Artificial Intelligence?</h2>
+        <div class="section-header">
+          <h2>Video Penjelasan</h2>
+          <p class="section-subtitle">
+            Pahami konsep AI melalui visualisasi yang menarik
+          </p>
+        </div>
+
         <div class="video-container">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/2ePf9rue1Ao"
-            title="YouTube video tentang AI"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+          <div class="video-player">
+            <div class="video-thumbnail">
+              <img
+                src="https://img.youtube.com/vi/2ePf9rue1Ao/maxresdefault.jpg"
+                alt="Video Thumbnail"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>
+                Artificial Intelligence Explained: Dari Dasar hingga Aplikasi
+              </h3>
+              <div class="video-meta">
+                <span><i class="fas fa-eye"></i> 1.2M views</span>
+                <span><i class="far fa-clock"></i> 12:45</span>
+                <span><i class="far fa-calendar-alt"></i> Apr 2024</span>
+              </div>
+              <p>
+                Video ini menjelaskan konsep dasar AI, machine learning, dan
+                deep learning dengan visualisasi yang mudah dipahami, dilengkapi
+                contoh aplikasi di kehidupan nyata.
+              </p>
+            </div>
+          </div>
+
+          <div class="video-playlist">
+            <h4><i class="fas fa-list"></i> Rekomendasi Video Lainnya</h4>
+            <div class="playlist-item">
+              <div class="playlist-thumb">
+                <img
+                  src="https://img.youtube.com/vi/XIrOM9oP3pA/sddefault.jpg"
+                  alt="Machine Learning"
+                />
+              </div>
+              <div class="playlist-info">
+                <h5>Machine Learning dalam 10 Menit</h5>
+                <span>8:32 • 450K views</span>
+              </div>
+            </div>
+            <div class="playlist-item">
+              <div class="playlist-thumb">
+                <img
+                  src="https://img.youtube.com/vi/ukzFI9rgwfU/sddefault.jpg"
+                  alt="Neural Networks"
+                />
+              </div>
+              <div class="playlist-info">
+                <h5>Bagaimana Jaringan Neural Bekerja</h5>
+                <span>15:18 • 890K views</span>
+              </div>
+            </div>
+            <div class="playlist-item">
+              <div class="playlist-thumb">
+                <img
+                  src="https://img.youtube.com/vi/8idr1W-1T7Y/sddefault.jpg"
+                  alt="AI Ethics"
+                />
+              </div>
+              <div class="playlist-info">
+                <h5>Etika & Tantangan AI Masa Depan</h5>
+                <span>18:45 • 320K views</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="sumber" class="sumber-section">
-        <h2>Sumber & Referensi</h2>
-        <ul>
-          <li>
+      <!-- Resources Section -->
+      <section id="sumber" class="resources-section">
+        <div class="section-header">
+          <h2>Sumber & Referensi</h2>
+          <p class="section-subtitle">
+            Material pembelajaran dan bacaan lanjutan tentang AI
+          </p>
+        </div>
+
+        <div class="resources-grid">
+          <div class="resource-card">
+            <div class="resource-icon">
+              <i class="fab fa-wikipedia-w"></i>
+            </div>
+            <h3>Wikipedia</h3>
+            <p>
+              Artikel komprehensif tentang sejarah, konsep, dan perkembangan AI
+              dari seluruh dunia.
+            </p>
             <a
               href="https://id.wikipedia.org/wiki/Kecerdasan_buatan"
               target="_blank"
-              >Wikipedia: Kecerdasan Buatan</a
-            >
-          </li>
-          <li>
+              class="resource-link"
+              >Kunjungi Sumber <i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">
+              <i class="fas fa-newspaper"></i>
+            </div>
+            <h3>Kompas Tekno</h3>
+            <p>
+              Analisis dampak AI di Indonesia dan perkembangan teknologi terkini
+              dalam negeri.
+            </p>
             <a
               href="https://www.kompas.com/skola/read/2021/01/19/190000569/apa-itu-artificial-intelligence-ai-"
               target="_blank"
-              >Kompas: Apa itu AI?</a
-            >
-          </li>
-        </ul>
+              class="resource-link"
+              >Baca Artikel <i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Kursus Online</h3>
+            <p>
+              Pelajari AI melalui kursus dari universitas ternama seperti
+              Stanford, MIT, dan Coursera.
+            </p>
+            <a
+              href="https://www.coursera.org/specializations/deep-learning"
+              target="_blank"
+              class="resource-link"
+              >Pelajari Sekarang <i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>Research Papers</h3>
+            <p>
+              Akses penelitian terkini tentang AI dari jurnal akademis dan
+              konferensi internasional.
+            </p>
+            <a
+              href="https://arxiv.org/list/cs.AI/recent"
+              target="_blank"
+              class="resource-link"
+              >Eksplorasi Riset <i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+        </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 TechToday. Dibuat untuk tugas Pemrograman Web I.</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i class="fas fa-microchip"></i> TechToday
+          </div>
+          <p>
+            Platform edukasi teknologi terdepan yang membahas inovasi masa depan
+            dan dampaknya bagi masyarakat.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="link-column">
+            <h4>Kategori</h4>
+            <ul>
+              <li><a href="#">Artificial Intelligence</a></li>
+              <li><a href="#">Internet of Things</a></li>
+              <li><a href="#">Blockchain</a></li>
+              <li><a href="#">Quantum Computing</a></li>
+              <li><a href="#">Cybersecurity</a></li>
+            </ul>
+          </div>
+
+          <div class="link-column">
+            <h4>Perusahaan</h4>
+            <ul>
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Tim</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Kontak</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+            </ul>
+          </div>
+
+          <div class="link-column">
+            <h4>Newsletter</h4>
+            <p>Dapatkan update teknologi terbaru langsung ke inbox Anda.</p>
+            <form class="footer-newsletter">
+              <input type="email" placeholder="Email Anda" required />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 TechToday. Dibuat untuk tugas Pemrograman Web I. Semua hak
+          dilindungi.
+        </p>
+        <div class="footer-tech">
+          <span
+            ><i class="fas fa-code"></i> Dibangun dengan HTML5, CSS3 &
+            JavaScript</span
+          >
+          <span
+            ><i class="fas fa-heart"></i> Dengan semangat untuk teknologi</span
+          >
+        </div>
+      </div>
     </footer>
 
-    <button id="backToTop" title="Kembali ke atas">&#8679;</button>
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Kembali ke atas">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <div class="mobile-logo">
+          <i class="fas fa-microchip"></i> TechToday
+        </div>
+        <button class="mobile-close" id="mobileClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav">
+        <li>
+          <a href="#artikel"><i class="fas fa-newspaper"></i> Artikel</a>
+        </li>
+        <li>
+          <a href="#topik"><i class="fas fa-th-large"></i> Topik</a>
+        </li>
+        <li>
+          <a href="#video"><i class="fas fa-play-circle"></i> Video</a>
+        </li>
+        <li>
+          <a href="#sumber"><i class="fas fa-book"></i> Sumber</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-info-circle"></i> Tentang</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-envelope"></i> Kontak</a>
+        </li>
+      </ul>
+      <div class="mobile-theme">
+        <span>Mode Gelap</span>
+        <label class="switch">
+          <input type="checkbox" id="mobileThemeToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

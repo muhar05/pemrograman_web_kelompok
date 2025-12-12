@@ -3,70 +3,801 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Detail Artikel: Internet of Things</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Internet of Things (IoT) - Jaringan Perangkat Terhubung | TechToday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Progress Bar -->
+  <div class="progress-bar"></div>
+  
+  <!-- Header dengan Hero Section Khusus IoT -->
   <header>
+    <div class="header-overlay"></div>
     <nav>
-      <div class="logo">TechToday</div>
-      <ul>
-        <li><a href="index.html#artikel">Artikel</a></li>
-        <li><a href="index.html#video">Video</a></li>
-        <li><a href="index.html#sumber">Sumber</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <article>
-      <h1>Internet of Things: Menghubungkan Segalanya</h1>
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Ilustrasi IoT" class="artikel-img">
-      <section>
-        <p>
-          <strong>Internet of Things (IoT)</strong> adalah konsep di mana berbagai perangkat fisik terhubung ke internet dan dapat saling bertukar data. Contohnya seperti smart TV, smartwatch, hingga perangkat rumah pintar.
-        </p>
-        <p>
-          IoT memudahkan manusia dalam mengontrol dan memantau perangkat dari jarak jauh. Dalam industri, IoT digunakan untuk otomatisasi pabrik, pemantauan kesehatan, hingga pengelolaan kota cerdas (smart city).
-        </p>
-        <p>
-          Tantangan utama IoT adalah keamanan data dan privasi pengguna. Oleh karena itu, pengembangan IoT harus memperhatikan aspek keamanan agar manfaatnya dapat dirasakan secara optimal.
-        </p>
-      </section>
-      <aside>
-        <h2>Fakta Menarik IoT</h2>
-        <ul>
-          <li>Diperkirakan lebih dari 30 miliar perangkat IoT akan terhubung pada tahun 2025.</li>
-          <li>IoT banyak digunakan di bidang pertanian, transportasi, dan kesehatan.</li>
-          <li>Keamanan siber menjadi isu penting dalam pengembangan IoT.</li>
+      <div class="logo-container" onclick="window.location.href='index.html'">
+        <div class="logo-icon">
+          <i class="fas fa-microchip"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">TechToday</span>
+          <span class="logo-sub">Future Tech Insights</span>
+        </div>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html#artikel" class="nav-link"><i class="fas fa-newspaper"></i> Artikel</a></li>
+          <li><a href="index.html#video" class="nav-link"><i class="fas fa-play-circle"></i> Video</a></li>
+          <li><a href="index.html#sumber" class="nav-link"><i class="fas fa-book"></i> Sumber</a></li>
+          <li><a href="index.html#topik" class="nav-link"><i class="fas fa-th-large"></i> Topik</a></li>
         </ul>
-      </aside>
-    </article>
-
-    <section id="video" class="video-section">
-      <h2>Video Penjelasan IoT</h2>
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/E6Zc7DNzKzI" title="YouTube video tentang IoT" frameborder="0" allowfullscreen></iframe>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle mobile menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    
+    <!-- Hero Section Khusus IoT -->
+    <section class="hero iot-hero">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="tag"><i class="fas fa-wifi"></i> Internet of Things</span>
+          <span class="tag-date"><i class="far fa-calendar-alt"></i> 14 Des 2025</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-highlight">Internet of Things</span> Jaringan Perangkat yang Mengubah Dunia
+        </h1>
+        <p class="hero-subtitle">
+          Dari rumah pintar hingga kota cerdas, IoT menghubungkan miliaran perangkat untuk menciptakan ekosistem digital yang terintegrasi dan efisien.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">30+ Miliar</span>
+            <span class="stat-label">Perangkat 2025</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">$1.6T</span>
+            <span class="stat-label">Nilai Pasar 2025</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">+75 Jt</span>
+            <span class="stat-label">Pekerjaan Baru</span>
+          </div>
+        </div>
+        <a href="#artikel" class="hero-cta">
+          Pelajari IoT <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
+      <div class="hero-visual">
+        <div class="iot-visual">
+          <div class="iot-device device-1">
+            <i class="fas fa-thermometer-half"></i>
+            <span>Sensor Suhu</span>
+          </div>
+          <div class="iot-device device-2">
+            <i class="fas fa-lightbulb"></i>
+            <span>Lampu Pintar</span>
+          </div>
+          <div class="iot-device device-3">
+            <i class="fas fa-video"></i>
+            <span>Kamera</span>
+          </div>
+          <div class="iot-device device-4">
+            <i class="fas fa-lock"></i>
+            <span>Kunci Pintar</span>
+          </div>
+          <div class="iot-device device-5">
+            <i class="fas fa-car"></i>
+            <span>Kendaraan</span>
+          </div>
+          <div class="iot-network"></div>
+        </div>
       </div>
     </section>
+  </header>
 
-    <section id="sumber" class="sumber-section">
-      <h2>Sumber & Referensi</h2>
-      <ul>
-        <li><a href="https://id.wikipedia.org/wiki/Internet_of_things" target="_blank">Wikipedia: Internet of Things</a></li>
-        <li><a href="https://tekno.kompas.com/read/2022/01/10/19000067/apa-itu-iot-internet-of-things" target="_blank">Kompas: Apa itu IoT?</a></li>
-      </ul>
+  <!-- Main Content -->
+  <main>
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <ol>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="index.html#topik">Topik</a></li>
+        <li class="active">Internet of Things</li>
+      </ol>
+    </nav>
+    
+    <!-- Article Section -->
+    <article id="artikel" class="article-main">
+      <div class="article-header">
+        <div class="article-meta">
+          <div class="author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Penulis" class="author-img">
+            <div class="author-info">
+              <span class="author-name">Budi Santoso, M.T.</span>
+              <span class="author-title">IoT Specialist & Network Engineer</span>
+            </div>
+          </div>
+          <div class="article-info">
+            <span class="reading-time"><i class="far fa-clock"></i> 10 min read</span>
+            <span class="share-btn" id="shareArticle"><i class="fas fa-share-alt"></i> Share</span>
+          </div>
+        </div>
+        <h1>Internet of Things: Revolusi Konektivitas Digital</h1>
+        <div class="article-tags">
+          <span class="article-tag"><i class="fas fa-wifi"></i> Konektivitas</span>
+          <span class="article-tag"><i class="fas fa-microchip"></i> Perangkat Pintar</span>
+          <span class="article-tag"><i class="fas fa-city"></i> Smart City</span>
+          <span class="article-tag"><i class="fas fa-shield-alt"></i> Keamanan IoT</span>
+        </div>
+      </div>
+      
+      <div class="article-content">
+        <div class="content-main">
+          <div class="featured-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+              alt="Ilustrasi IoT Modern"
+              class="featured-img"
+            />
+            <div class="image-caption">Jaringan perangkat IoT yang saling terhubung dalam ekosistem digital</div>
+          </div>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-sitemap"></i></span> Apa itu Internet of Things (IoT)?</h2>
+            <p>
+              <span class="drop-cap">I</span>nternet of Things (IoT) mengacu pada jaringan fisik objek—"things"—yang tertanam dengan sensor, perangkat lunak, dan teknologi lainnya untuk tujuan menghubungkan dan bertukar data dengan perangkat dan sistem lain melalui internet. Perangkat ini berkisar dari objek rumah tangga biasa hingga alat industri yang canggih.
+            </p>
+            <p>
+              Dengan lebih dari 30 miliar perangkat IoT yang diperkirakan akan terhubung pada tahun 2025, teknologi ini telah menjadi landasan penting dalam transformasi digital yang terjadi di seluruh dunia. IoT memungkinkan objek untuk dirasakan atau dikendalikan secara jarak jauh melalui infrastruktur jaringan yang ada.
+            </p>
+            
+            <div class="info-card highlight">
+              <div class="info-card-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <div class="info-card-content">
+                <h3>Fakta Penting</h3>
+                <p>IoT dapat mengurangi biaya operasional hingga 30% dalam sektor industri dengan mengoptimalkan penggunaan sumber daya dan memprediksi kebutuhan perawatan.</p>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-layer-group"></i></span> Arsitektur dan Komponen IoT</h2>
+            <p>
+              Sistem IoT biasanya terdiri dari empat komponen utama: perangkat/sensor, konektivitas, pemrosesan data, dan antarmuka pengguna. Perangkat mengumpulkan data dari lingkungannya, mengirimkannya melalui jaringan ke platform cloud untuk diproses, dan hasilnya disajikan kepada pengguna.
+            </p>
+            
+            <div class="columns">
+              <div class="column">
+                <h3><i class="fas fa-microchip"></i> Perangkat & Sensor</h3>
+                <p>Komponen fisik yang mengumpulkan data dari lingkungan, seperti sensor suhu, kelembaban, gerak, atau kamera.</p>
+              </div>
+              <div class="column">
+                <h3><i class="fas fa-wifi"></i> Konektivitas</h3>
+                <p>Jaringan yang menghubungkan perangkat ke cloud, termasuk Wi-Fi, Bluetooth, Zigbee, LoRaWAN, atau jaringan seluler.</p>
+              </div>
+              <div class="column">
+                <h3><i class="fas fa-cloud"></i> Pemrosesan Data</h3>
+                <p>Platform cloud yang menerima, menyimpan, dan menganalisis data dari perangkat IoT untuk menghasilkan wawasan.</p>
+              </div>
+              <div class="column">
+                <h3><i class="fas fa-user"></i> Antarmuka Pengguna</h3>
+                <p>Aplikasi atau dashboard yang memungkinkan pengguna berinteraksi dengan sistem IoT dan melihat hasil analisis.</p>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-home"></i></span> Aplikasi IoT dalam Kehidupan Sehari-hari</h2>
+            <div class="application-grid">
+              <div class="app-card">
+                <div class="app-icon smart-home">
+                  <i class="fas fa-home"></i>
+                </div>
+                <h3>Rumah Pintar</h3>
+                <p>Kontrol pencahayaan, termostat, keamanan, dan peralatan rumah tangga melalui smartphone atau asisten virtual.</p>
+                <ul class="app-features">
+                  <li><i class="fas fa-check-circle"></i> Otomatisasi rumah</li>
+                  <li><i class="fas fa-check-circle"></i> Efisiensi energi</li>
+                  <li><i class="fas fa-check-circle"></i> Keamanan terpadu</li>
+                </ul>
+              </div>
+              
+              <div class="app-card">
+                <div class="app-icon smart-city">
+                  <i class="fas fa-city"></i>
+                </div>
+                <h3>Kota Cerdas</h3>
+                <p>Manajemen lalu lintas, parkir pintar, pengelolaan sampah, dan pemantauan lingkungan untuk kota yang lebih efisien.</p>
+                <ul class="app-features">
+                  <li><i class="fas fa-check-circle"></i> Lalu lintas optimal</li>
+                  <li><i class="fas fa-check-circle"></i> Pengelolaan energi</li>
+                  <li><i class="fas fa-check-circle"></i> Keamanan publik</li>
+                </ul>
+              </div>
+              
+              <div class="app-card">
+                <div class="app-icon healthcare">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Kesehatan</h3>
+                <p>Pemantauan kesehatan jarak jauh, perangkat medis yang terhubung, dan manajemen obat untuk perawatan yang lebih baik.</p>
+                <ul class="app-features">
+                  <li><i class="fas fa-check-circle"></i> Monitoring pasien</li>
+                  <li><i class="fas fa-check-circle"></i> Perangkat medis pintar</li>
+                  <li><i class="fas fa-check-circle"></i> Manajemen rumah sakit</li>
+                </ul>
+              </div>
+              
+              <div class="app-card">
+                <div class="app-icon industry">
+                  <i class="fas fa-industry"></i>
+                </div>
+                <h3>Industri 4.0</h3>
+                <p>Otomatisasi pabrik, pemeliharaan prediktif, rantai pasokan pintar, dan kontrol kualitas real-time di industri.</p>
+                <ul class="app-features">
+                  <li><i class="fas fa-check-circle"></i> Predictive maintenance</li>
+                  <li><i class="fas fa-check-circle"></i> Otomatisasi produksi</li>
+                  <li><i class="fas fa-check-circle"></i> Supply chain tracking</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-exclamation-triangle"></i></span> Tantangan dan Keamanan IoT</h2>
+            <p>
+              Meskipun IoT menawarkan banyak manfaat, teknologi ini juga menghadapi beberapa tantangan signifikan, terutama dalam hal keamanan dan privasi. Dengan miliaran perangkat yang terhubung, setiap perangkat merupakan titik masuk potensial untuk serangan siber.
+            </p>
+            
+            <div class="challenges-container">
+              <div class="challenge-card">
+                <div class="challenge-header security">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="challenge-content">
+                  <h4>Keamanan Siber</h4>
+                  <p>Perangkat IoT seringkali memiliki keamanan yang lemah, membuatnya rentan terhadap peretasan dan serangan DDoS.</p>
+                </div>
+              </div>
+              
+              <div class="challenge-card">
+                <div class="challenge-header privacy">
+                  <i class="fas fa-user-secret"></i>
+                </div>
+                <div class="challenge-content">
+                  <h4>Privasi Data</h4>
+                  <p>Pengumpulan data pribadi yang masif menimbulkan kekhawatiran tentang bagaimana data tersebut digunakan dan dilindungi.</p>
+                </div>
+              </div>
+              
+              <div class="challenge-card">
+                <div class="challenge-header interoperability">
+                  <i class="fas fa-exchange-alt"></i>
+                </div>
+                <div class="challenge-content">
+                  <h4>Interoperabilitas</h4>
+                  <p>Kurangnya standar universal membuat perangkat dari vendor berbeda sulit berkomunikasi satu sama lain.</p>
+                </div>
+              </div>
+              
+              <div class="challenge-card">
+                <div class="challenge-header scalability">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+                <div class="challenge-content">
+                  <h4>Skalabilitas</h4>
+                  <p>Mengelola dan memproses data dari miliaran perangkat membutuhkan infrastruktur yang kuat dan efisien.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="info-card warning">
+              <div class="info-card-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+              </div>
+              <div class="info-card-content">
+                <h3>Perhatian Keamanan</h3>
+                <p>Menurut penelitian, lebih dari 40% perangkat IoT memiliki kerentanan keamanan yang signifikan. Pengguna harus selalu memperbarui firmware, menggunakan kata sandi yang kuat, dan membeli perangkat dari vendor terpercaya.</p>
+              </div>
+            </div>
+          </section>
+          
+          <section class="article-section">
+            <h2><span class="section-icon"><i class="fas fa-chart-line"></i></span> Masa Depan IoT</h2>
+            <p>
+              Masa depan IoT akan didorong oleh kemajuan dalam kecerdasan buatan, komputasi tepi (edge computing), dan jaringan 5G. Integrasi AI akan membuat perangkat IoT lebih cerdas dan mampu membuat keputusan secara mandiri, sementara edge computing akan mengurangi latensi dengan memproses data lebih dekat ke sumbernya.
+            </p>
+            
+            <div class="future-trends">
+              <div class="trend">
+                <div class="trend-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <div class="trend-content">
+                  <h4>AIoT (AI + IoT)</h4>
+                  <p>Integrasi kecerdasan buatan dengan IoT untuk perangkat yang lebih cerdas dan otonom.</p>
+                </div>
+              </div>
+              
+              <div class="trend">
+                <div class="trend-icon">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <div class="trend-content">
+                  <h4>Edge Computing</h4>
+                  <p>Pemrosesan data di tepi jaringan untuk mengurangi latensi dan beban bandwidth.</p>
+                </div>
+              </div>
+              
+              <div class="trend">
+                <div class="trend-icon">
+                  <i class="fas fa-satellite-dish"></i>
+                </div>
+                <div class="trend-content">
+                  <h4>5G dan IoT</h4>
+                  <p>Jaringan 5G akan mendukung densitas perangkat yang lebih tinggi dan latensi yang lebih rendah.</p>
+                </div>
+              </div>
+              
+              <div class="trend">
+                <div class="trend-icon">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <div class="trend-content">
+                  <h4>Sustainability</h4>
+                  <p>IoT untuk pengelolaan energi yang lebih efisien dan pengurangan dampak lingkungan.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        <aside class="article-sidebar">
+          <div class="sidebar-card">
+            <h3><i class="fas fa-history"></i> Timeline IoT</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-year">1999</div>
+                <div class="timeline-content">Istilah "Internet of Things" pertama kali dicetuskan oleh Kevin Ashton</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2008</div>
+                <div class="timeline-content">Jumlah perangkat yang terhubung melebihi jumlah manusia di bumi</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2011</div>
+                <div class="timeline-content">IPv6 diluncurkan, menyediakan alamat yang cukup untuk miliaran perangkat</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2014</div>
+                <div class="timeline-content">Amazon Echo memperkenalkan asisten virtual berbasis IoT untuk rumah</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2020</div>
+                <div class="timeline-content">Pandemi COVID-19 mempercepat adopsi IoT di kesehatan dan kerja remote</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sidebar-card">
+            <h3><i class="fas fa-chart-pie"></i> Statistik IoT Global</h3>
+            <div class="stats-container">
+              <div class="stat-item">
+                <div class="stat-bar" style="width: 92%"></div>
+                <span class="stat-label">Perusahaan yang mengadopsi IoT</span>
+                <span class="stat-value">92%</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-bar" style="width: 68%"></div>
+                <span class="stat-label">Penghematan biaya operasional</span>
+                <span class="stat-value">68%</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-bar" style="width: 45%"></div>
+                <span class="stat-label">Perangkat dengan kerentanan keamanan</span>
+                <span class="stat-value">45%</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-bar" style="width: 83%"></div>
+                <span class="stat-label">Kenaikan efisiensi energi</span>
+                <span class="stat-value">83%</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sidebar-card">
+            <h3><i class="fas fa-cogs"></i> Protokol IoT Populer</h3>
+            <div class="protocols">
+              <div class="protocol">
+                <span class="protocol-name">MQTT</span>
+                <span class="protocol-desc">Lightweight messaging untuk perangkat terbatas</span>
+              </div>
+              <div class="protocol">
+                <span class="protocol-name">CoAP</span>
+                <span class="protocol-desc">Protokol web untuk perangkat terbatas</span>
+              </div>
+              <div class="protocol">
+                <span class="protocol-name">Zigbee</span>
+                <span class="protocol-desc">Jaringan mesh untuk otomatisasi rumah</span>
+              </div>
+              <div class="protocol">
+                <span class="protocol-name">LoRaWAN</span>
+                <span class="protocol-desc">Jaringan area luas untuk IoT jarak jauh</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sidebar-card newsletter">
+            <h3><i class="fas fa-paper-plane"></i> IoT Newsletter</h3>
+            <p>Dapatkan update terbaru tentang perkembangan IoT dan teknologi terhubung</p>
+            <form class="newsletter-form" id="iotNewsletter">
+              <input type="email" placeholder="Email Anda" required>
+              <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <p class="newsletter-note">Bergabung dengan 30.000+ profesional IoT</p>
+          </div>
+        </aside>
+      </div>
+    </article>
+    
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+      <div class="section-header">
+        <h2>Video Penjelasan IoT</h2>
+        <p class="section-subtitle">Pahami konsep IoT melalui visualisasi yang menarik</p>
+      </div>
+      
+      <div class="video-container">
+        <div class="video-player">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/E6Zc7DNzKzI/maxresdefault.jpg" alt="Video Thumbnail">
+            <div class="play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Internet of Things Explained: Dari Konsep ke Aplikasi Nyata</h3>
+            <div class="video-meta">
+              <span><i class="fas fa-eye"></i> 850K views</span>
+              <span><i class="far fa-clock"></i> 15:22</span>
+              <span><i class="far fa-calendar-alt"></i> Mar 2024</span>
+            </div>
+            <p>Video ini menjelaskan konsep dasar IoT, arsitektur sistem, protokol komunikasi, dan contoh aplikasi di berbagai sektor industri dan kehidupan sehari-hari.</p>
+          </div>
+        </div>
+        
+        <div class="video-playlist">
+          <h4><i class="fas fa-list"></i> Rekomendasi Video IoT</h4>
+          <div class="playlist-item">
+            <div class="playlist-thumb">
+              <img src="https://img.youtube.com/vi/6mBO2vqLv38/sddefault.jpg" alt="IoT Security">
+            </div>
+            <div class="playlist-info">
+              <h5>Keamanan IoT: Tantangan dan Solusi</h5>
+              <span>12:45 • 320K views</span>
+            </div>
+          </div>
+          <div class="playlist-item">
+            <div class="playlist-thumb">
+              <img src="https://img.youtube.com/vi/Q3ur8wzpV0U/sddefault.jpg" alt="Smart Home">
+            </div>
+            <div class="playlist-info">
+              <h5>Membangun Rumah Pintar dengan IoT</h5>
+              <span>18:30 • 540K views</span>
+            </div>
+          </div>
+          <div class="playlist-item">
+            <div class="playlist-thumb">
+              <img src="https://img.youtube.com/vi/Urw7o1C-eVY/sddefault.jpg" alt="Industrial IoT">
+            </div>
+            <div class="playlist-info">
+              <h5>IoT dalam Industri 4.0</h5>
+              <span>20:15 • 410K views</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <div style="margin-top:2rem;">
-      <a href="index.html" class="btn-kembali" style="color:var(--primary);text-decoration:underline;">&#8592; Kembali ke Beranda</a>
+    
+    <!-- Related Topics Section -->
+    <section class="topics-section">
+      <div class="section-header">
+        <h2>Topik Teknologi Terkait</h2>
+        <p class="section-subtitle">Pelajari teknologi lain yang berhubungan dengan IoT</p>
+      </div>
+      
+      <div class="topics-grid">
+        <div class="topic-card" onclick="window.location.href='index.html#artikel'">
+          <div class="topic-card-header ai">
+            <div class="topic-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <span class="topic-tag">Trending</span>
+          </div>
+          <div class="topic-card-content">
+            <h3>Artificial Intelligence</h3>
+            <p>Kecerdasan buatan yang membuat perangkat IoT lebih pintar dengan kemampuan belajar dan adaptasi.</p>
+            <div class="topic-meta">
+              <span><i class="far fa-clock"></i> 8 min read</span>
+              <span><i class="far fa-calendar-alt"></i> Updated 2 days ago</span>
+            </div>
+          </div>
+          <div class="topic-card-footer">
+            <a href="index.html#artikel" class="topic-link">Pelajari AI <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="topic-card" onclick="window.location.href='detail-blockchain.html'">
+          <div class="topic-card-header blockchain">
+            <div class="topic-icon">
+              <i class="fas fa-link"></i>
+            </div>
+            <span class="topic-tag">Secure</span>
+          </div>
+          <div class="topic-card-content">
+            <h3>Blockchain untuk IoT</h3>
+            <p>Teknologi blockchain meningkatkan keamanan dan transparansi dalam ekosistem perangkat IoT.</p>
+            <div class="topic-meta">
+              <span><i class="far fa-clock"></i> 9 min read</span>
+              <span><i class="far fa-calendar-alt"></i> Updated 1 week ago</span>
+            </div>
+          </div>
+          <div class="topic-card-footer">
+            <a href="detail-blockchain.html" class="topic-link">Eksplorasi <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Resources Section -->
+    <section id="sumber" class="resources-section">
+      <div class="section-header">
+        <h2>Sumber & Referensi IoT</h2>
+        <p class="section-subtitle">Material pembelajaran dan bacaan lanjutan tentang Internet of Things</p>
+      </div>
+      
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fab fa-wikipedia-w"></i>
+          </div>
+          <h3>Wikipedia IoT</h3>
+          <p>Artikel komprehensif tentang sejarah, konsep, arsitektur, dan perkembangan IoT di seluruh dunia.</p>
+          <a href="https://id.wikipedia.org/wiki/Internet_of_things" target="_blank" class="resource-link">Kunjungi Sumber <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <h3>Kompas Tekno</h3>
+          <p>Analisis perkembangan IoT di Indonesia dan penerapannya dalam berbagai sektor industri.</p>
+          <a href="https://tekno.kompas.com/read/2022/01/10/19000067/apa-itu-iot-internet-of-things" target="_blank" class="resource-link">Baca Artikel <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Kursus IoT Online</h3>
+          <p>Pelajari IoT melalui kursus dari platform seperti Coursera, edX, dan Udacity dengan sertifikasi.</p>
+          <a href="https://www.coursera.org/specializations/iot" target="_blank" class="resource-link">Pelajari Sekarang <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i classfas fa-book"></i>
+          </div>
+          <h3>Standar & Protokol</h3>
+          <p>Dokumentasi resmi tentang standar, protokol, dan spesifikasi teknis IoT dari organisasi seperti IEEE, IETF.</p>
+          <a href="https://www.ietf.org/topics/iot/" target="_blank" class="resource-link">Eksplorasi Dokumen <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Back to Home Button -->
+    <div class="back-home-container">
+      <a href="index.html" class="back-home-btn">
+        <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+      </a>
+      <div class="article-nav">
+        <a href="index.html#artikel" class="nav-prev">
+          <i class="fas fa-chevron-left"></i> Artikel Sebelumnya
+        </a>
+        <a href="detail-blockchain.html" class="nav-next">
+          Artikel Selanjutnya <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
     </div>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 TechToday. Dibuat untuk tugas Pemrograman Web I.</p>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <i class="fas fa-microchip"></i> TechToday
+        </div>
+        <p>Platform edukasi teknologi terdepan yang membahas inovasi masa depan dan dampaknya bagi masyarakat.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <div class="link-column">
+          <h4>Kategori</h4>
+          <ul>
+            <li><a href="index.html#artikel">Artificial Intelligence</a></li>
+            <li><a href="detail-iot.html" class="active">Internet of Things</a></li>
+            <li><a href="detail-blockchain.html">Blockchain</a></li>
+            <li><a href="detail-quantum.html">Quantum Computing</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+          </ul>
+        </div>
+        
+        <div class="link-column">
+          <h4>Perusahaan</h4>
+          <ul>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Tim</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+        
+        <div class="link-column">
+          <h4>Newsletter</h4>
+          <p>Dapatkan update teknologi terbaru langsung ke inbox Anda.</p>
+          <form class="footer-newsletter">
+            <input type="email" placeholder="Email Anda" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 TechToday. Dibuat untuk tugas Pemrograman Web I. Semua hak dilindungi.</p>
+      <div class="footer-tech">
+        <span><i class="fas fa-code"></i> Dibangun dengan HTML5, CSS3 & JavaScript</span>
+        <span><i class="fas fa-heart"></i> Dengan semangat untuk teknologi</span>
+      </div>
+    </div>
   </footer>
 
-  <button id="backToTop" title="Kembali ke atas">&#8679;</button>
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Kembali ke atas">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="mobile-logo">
+        <i class="fas fa-microchip"></i> TechToday
+      </div>
+      <button class="mobile-close" id="mobileClose">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav">
+      <li><a href="index.html#artikel"><i class="fas fa-newspaper"></i> Artikel Utama</a></li>
+      <li><a href="index.html#topik"><i class="fas fa-th-large"></i> Topik</a></li>
+      <li><a href="#video"><i class="fas fa-play-circle"></i> Video IoT</a></li>
+      <li><a href="#sumber"><i class="fas fa-book"></i> Sumber</a></li>
+      <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+    </ul>
+    <div class="mobile-theme">
+      <span>Mode Gelap</span>
+      <label class="switch">
+        <input type="checkbox" id="mobileThemeToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
   <script src="script.js"></script>
+  <script>
+    // IoT-specific JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      // IoT-specific animations
+      const iotDevices = document.querySelectorAll('.iot-device');
+      iotDevices.forEach((device, index) => {
+        device.style.animationDelay = `${index * 0.3}s`;
+        device.classList.add('animate-in');
+      });
+      
+      // IoT newsletter form
+      const iotNewsletterForm = document.getElementById('iotNewsletter');
+      if (iotNewsletterForm) {
+        iotNewsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const button = this.querySelector('button');
+          const originalText = button.innerHTML;
+          
+          button.innerHTML = '<i class="fas fa-check"></i> Terdaftar!';
+          button.style.background = 'var(--success)';
+          
+          setTimeout(() => {
+            button.innerHTML = originalText;
+            button.style.background = '';
+            this.reset();
+            
+            // Show success message
+            const successMsg = document.createElement('p');
+            successMsg.className = 'success-message';
+            successMsg.textContent = 'Terima kasih! Anda akan menerima newsletter IoT kami.';
+            successMsg.style.color = 'var(--success)';
+            successMsg.style.fontSize = '0.9rem';
+            successMsg.style.marginTop = '10px';
+            
+            this.appendChild(successMsg);
+            setTimeout(() => successMsg.remove(), 3000);
+          }, 2000);
+        });
+      }
+      
+      // Share article functionality for IoT page
+      const shareBtn = document.getElementById('shareArticle');
+      if (shareBtn) {
+        shareBtn.addEventListener('click', function() {
+          if (navigator.share) {
+            navigator.share({
+              title: 'Internet of Things (IoT) - TechToday',
+              text: 'Baca artikel menarik tentang Internet of Things dan bagaimana teknologi ini mengubah dunia',
+              url: window.location.href,
+            })
+            .then(() => console.log('Berhasil membagikan artikel IoT'))
+            .catch((error) => console.log('Error sharing', error));
+          } else {
+            navigator.clipboard.writeText(window.location.href)
+              .then(() => {
+                alert('Link artikel IoT berhasil disalin ke clipboard!');
+              })
+              .catch(err => {
+                console.error('Gagal menyalin: ', err);
+              });
+          }
+        });
+      }
+    });
+    
+    // IoT device animation
+    function animateIoTDevices() {
+      const devices = document.querySelectorAll('.iot-device');
+      devices.forEach(device => {
+        device.addEventListener('mouseenter', function() {
+          this.style.transform = 'scale(1.1)';
+          this.style.zIndex = '10';
+        });
+        
+        device.addEventListener('mouseleave', function() {
+          this.style.transform = 'scale(1)';
+          this.style.zIndex = '1';
+        });
+      });
+    }
+    
+    // Initialize IoT animations
+    setTimeout(animateIoTDevices, 500);
+  </script>
 </body>
 </html>
